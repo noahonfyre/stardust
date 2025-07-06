@@ -6,7 +6,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper
 
 object StardustUtils {
     fun hasEnchantment(enchantment: Enchantment, entity: LivingEntity): Boolean {
-        return EnchantmentHelper.getEnchantmentLevel(enchantment, entity) > 0
+        return getLevel(enchantment, entity) > 0
     }
 
     fun getLevel(enchantment: Enchantment, entity: LivingEntity): Int {
