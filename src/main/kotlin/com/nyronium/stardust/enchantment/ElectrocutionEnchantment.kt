@@ -10,14 +10,24 @@ import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
-class LightningAspectEnchantment(pRarity: Rarity, pCategory: EnchantmentCategory, vararg pApplicableSlots: EquipmentSlot) : Enchantment(pRarity, pCategory, pApplicableSlots) {
+class ElectrocutionEnchantment(pRarity: Rarity, pCategory: EnchantmentCategory, vararg pApplicableSlots: EquipmentSlot) : Enchantment(pRarity, pCategory, pApplicableSlots) {
     override fun getMaxLevel() = 2
 
     override fun doPostAttack(pAttacker: LivingEntity, pTarget: Entity, pLevel: Int) {
         if(pAttacker.level().isClientSide) return
 
-        repeat(pLevel) {
-            EntityType.LIGHTNING_BOLT.spawn(pAttacker.level() as ServerLevel, null, pTarget as Player, pTarget.blockPosition(), MobSpawnType.TRIGGERED, false, false)
+        val random = (0..100).random()
+        println(random)
+        if(random <= 50*pLevel) {
+            EntityType.LIGHTNING_BOLT.spawn(
+                pAttacker.level() as ServerLevel,
+                null,
+                pAttacker as Player,
+                pTarget.blockPosition(),
+                MobSpawnType.TRIGGERED,
+                false,
+                false
+            )
         }
     }
 }
