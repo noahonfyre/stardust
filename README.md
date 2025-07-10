@@ -1,27 +1,43 @@
-# Stardust 💫
-Stardust currently adds 10+ new vanilla-style enchantments to the game with even more to come.
+# 💫 Stardust
+Stardust currently adds 20+ new vanilla-style enchantments to the game with even more to come. It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
 
-## Enchantments
+## 🪄 Enchantments
+### Weapon Enchantments
+- Striking (III) makes critical hits deal up to twice as much damage as normal.
+- Spite (III) allows a player to deal up to triple the damage to entities that have killed them previously.
+- Frenzy (III) increases the weapon's attack speed.
+- Electrocution (II) strikes lightning into enemies on hit.
+- Frostbite (II) freezes the enemy on hit.
+- Decay (II) inflicts wither on the enemy on hit.
+- Gaining (V) increases experience yield from entities.
+### Tool Enchantments
+- Wisdom (V) increases experience yield from blocks.
+- Reach (V) increases the reach distance of the tool.
+### Armor Enchantments
+- Resilience (IV) increases armor toughness.
+- Sheltering (IV) increases armor points.
+- Refractiveness (IV) reduces incoming damage.
+### Helmet
+- Charisma (III) reduces villager trade prices.
+- Peering (I) removes enderman and piglin aggression.
+- Stealthiness (III) reduces entity tempt range.
+### Chestplate
+- Remedy restores player stats like hunger and health from incoming experience.
+- Nullification (III) has a small chance to nullify any incoming damage.
+### Leggings
+- Endurance (III) reduces hunger exhaustion.
+- Determination (III) heals the player faster whilst sneaking.
+### Boots
+- Pacing (III) grants increased movement speed.
+- Stability (III) grants partial knockback resistance.
+### Durability Enchantments
+- Reparation (III) repairs the item from the player's experience.
+- Tenacity makes the item truly unbreakable.
+### Other Enchantments
+- Retention (III) keeps the item in the inventory after death.
 
-| Name:            | Max Level: | Applicable on:            | Description:                                                         |
-|------------------|------------|---------------------------|----------------------------------------------------------------------|
-| Spite            | 3          | Sword                     | Lets you deal up to triple damage on entities who killed you before. |
-| Gaining          | 5          | Sword, Axe                | Increases experience yield from entities.                            |
-| Violence         | 3          | Sword                     | Crits deal up to 2x as much damage as normal                         |
-| Lightning Aspect | 2          | Sword, Axe                | Strikes lightnings into your enemy on hit.                           |
-| Freezing Aspect  | 2          | Sword, Axe                | Freezes the enemy on hit.                                            |
-| Decay            | 2          | Sword, Axe                | Inflicts wither on the enemy on hit.                                 |
-| Reach            | 3          | Any tool or weapon        | Increases the reach distance of the tool.                            |
-| Wisdom           | 5          | Pickaxe                   | Increases experience yield from blocks.                              |
-| Determination    | 3          | Leggings                  | Heals yourself faster when sneaking.                                 |
-| Pacing           | 3          | Boots                     | Grants increased movement speed.                                     |
-| Reparation       | 3          | Breakable                 | Repairs the item from your experience when mending is also present.  |
-| Tenacity         | 1          | Breakable                 | Makes the item truly unbreakable.                                    |
-| Stability        | 3          | Boots                     | Grants partial resistance against knockback.                         |
-| Retention        | 3          | Any armor, tool or weapon | Keeps the item in the inventory, even after death.                   |
-| Remedy           | 1          | Chestplate                | Restores player stats from incoming experience.                      |
-| Peering          | 1          | Helmet                    | Removes Enderman aggression.                                         |
-| Bustling         | 1          | Helmet                    | Removes Piglin aggression.                                           |
-| Charisma         | 3          | Helmet                    | Reduces villager's trading prices.                                   |
-| Frenzy           | 3          | Sword                     | Increases the weapon's attack speed.                                 |
-| Endurance        | 3          | Leggings                  | Reduces hunger exhaustion of the player.                             |
+## ✨ Enhancements
+
+## 💎 Suggestions
+I recommend playing with the following mods for the best experience:
+- [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) for in-game descriptions
