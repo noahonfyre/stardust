@@ -1,4 +1,4 @@
-package com.nyronium.stardust
+package com.nyronium.stardust.misc
 
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantment
