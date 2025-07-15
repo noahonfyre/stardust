@@ -1,21 +1,19 @@
 package com.nyronium.stardust.enchantment
 
+import com.nyronium.stardust.enchantment.infrastructure.StardustEnchantment
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.player.Player
-import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
-class GainingEnchantment(pRarity: Rarity, pCategory: EnchantmentCategory, vararg pApplicableSlots: EquipmentSlot) : Enchantment(pRarity, pCategory, pApplicableSlots) {
-    override fun getMaxLevel() = 3
+class GainingEnchantment : StardustEnchantment(Rarity.VERY_RARE, EnchantmentCategory.WEAPON, arrayOf(EquipmentSlot.MAINHAND)) {
+    override fun getMaxLevel() = 5
 
     override fun doPostAttack(pAttacker: LivingEntity, pTarget: Entity, pLevel: Int) {
         if(pAttacker.level().isClientSide) return
         if(pAttacker !is Player) return
         if(pTarget !is LivingEntity) return
-
-        val experience = pTarget.experienceReward*(1+pLevel)
-        pAttacker.giveExperiencePoints(experience.coerceAtLeast(1))
+        pAttacker.giveExperiencePoints(pTarget.experienceReward*(pLevel/maxLevel))
     }
 }

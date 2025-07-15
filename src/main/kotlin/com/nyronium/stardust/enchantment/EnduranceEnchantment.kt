@@ -4,6 +4,6 @@ import com.nyronium.stardust.enchantment.infrastructure.StardustEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
-class WisdomEnchantment : StardustEnchantment(Rarity.VERY_RARE, EnchantmentCategory.DIGGER, arrayOf(EquipmentSlot.MAINHAND)) {
-    override fun getMaxLevel() = 5
+class EnduranceEnchantment : StardustEnchantment(Rarity.UNCOMMON, EnchantmentCategory.ARMOR_LEGS, arrayOf(EquipmentSlot.LEGS)) {
+    override fun getMaxLevel() = 4
 }
