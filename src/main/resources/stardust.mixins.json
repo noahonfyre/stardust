@@ -1,12 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.nyronium.stardust.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "stardust.refmap.json",
+  "package": "mixin",
+  "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AnvilMenuMixin",
+    "PlayerMixin"
   ],
   "client": [
+    "AnvilScreenMixin"
   ],
   "injectors": {
     "defaultRequire": 1
