@@ -2,7 +2,7 @@
 
 ---
 
-Stardust currently adds **20+ new vanilla-style enchantments** to the game with even more to come.
+Stardust currently adds **25+ new vanilla-style enchantments** to the game with even more to come.
 It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
 
 ---
@@ -52,7 +52,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ---
 
-- 20+ new vanilla-style enchantments with unique mechanics.
+- 25+ new vanilla-style enchantments with unique mechanics.
 - No more "Too expensive!" level limitation in anvils.
 - English & German translations for both enchantments and their descriptions.
 
