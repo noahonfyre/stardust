@@ -9,6 +9,7 @@ import net.minecraft.world.entity.player.Player
 import net.minecraftforge.event.TickEvent
 import net.minecraftforge.event.entity.living.EnderManAngerEvent
 import net.minecraftforge.event.entity.living.LivingChangeTargetEvent
+import net.minecraftforge.event.entity.living.LivingHealEvent
 import net.minecraftforge.event.entity.living.LivingHurtEvent
 import net.minecraftforge.event.entity.player.CriticalHitEvent
 import net.minecraftforge.event.level.BlockEvent
@@ -19,6 +20,20 @@ import net.minecraftforge.fml.common.Mod
 @Mod.EventBusSubscriber(modid = Stardust.ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 object EventHandler {
     var tickTasks = mutableListOf<(TickEvent.PlayerTickEvent) -> Unit>()
+
+    @SubscribeEvent
+    fun onLivingHeal(event: LivingHealEvent) {
+        if(event.entity.level().isClientSide) return
+        if(event.entity !is Player) return
+        val player = event.entity as Player
+
+        if(!StardustUtils.hasEnchantment(Stardust.DETERMINATION.get(), player.getItemBySlot(EquipmentSlot.LEGS))) return
+        val determinationLevel = StardustUtils.getLevel(Stardust.DETERMINATION.get(), player.getItemBySlot(EquipmentSlot.LEGS))
+
+        if(!player.isCrouching) return
+
+        event.amount *= 1+determinationLevel/Stardust.DETERMINATION.get().maxLevel
+    }
 
     @SubscribeEvent
     fun onLivingHurt(event: LivingHurtEvent) {
