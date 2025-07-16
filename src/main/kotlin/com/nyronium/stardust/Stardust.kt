@@ -40,6 +40,8 @@ object Stardust {
     val CHARISMA: RegistryObject<Enchantment> = REGISTRY.register("charisma") { CharismaEnchantment() }
     val PEERING: RegistryObject<Enchantment> = REGISTRY.register("peering") { CharismaEnchantment() }
 
+    val STEALTHINESS: RegistryObject<Enchantment> = REGISTRY.register("stealthiness") { RemedyEnchantment() }
+    val REMEDY: RegistryObject<Enchantment> = REGISTRY.register("remedy") { RemedyEnchantment() }
     val NULLIFICATION: RegistryObject<Enchantment> = REGISTRY.register("nullification") { NullificationEnchantment() }
 
     val ENDURANCE: RegistryObject<Enchantment> = REGISTRY.register("endurance") { EnduranceEnchantment() }

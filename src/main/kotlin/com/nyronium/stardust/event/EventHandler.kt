@@ -12,6 +12,7 @@ import net.minecraftforge.event.entity.living.LivingChangeTargetEvent
 import net.minecraftforge.event.entity.living.LivingHealEvent
 import net.minecraftforge.event.entity.living.LivingHurtEvent
 import net.minecraftforge.event.entity.player.CriticalHitEvent
+import net.minecraftforge.event.entity.player.PlayerXpEvent
 import net.minecraftforge.event.level.BlockEvent
 import net.minecraftforge.eventbus.api.Event
 import net.minecraftforge.eventbus.api.SubscribeEvent
@@ -51,6 +52,22 @@ object EventHandler {
     }
 
     @SubscribeEvent
+    fun onPickupExperience(event: PlayerXpEvent.PickupXp) {
+        if(event.entity.level().isClientSide) return
+        val player = event.entity
+
+        if(!StardustUtils.hasEnchantment(Stardust.REMEDY.get(), player.getItemBySlot(EquipmentSlot.CHEST))) return
+
+        if(player.foodData.foodLevel < 20) {
+            player.foodData.eat(1, event.orb.value/10f)
+        } else if(player.health < player.maxHealth) {
+            player.heal(event.orb.value/10f)
+        } else return
+
+        event.orb.value = 0
+    }
+
+    @SubscribeEvent
     fun onCriticalHit(event: CriticalHitEvent) {
         val player = event.entity
         if(player.level().isClientSide) return
@@ -68,7 +85,7 @@ object EventHandler {
     @SubscribeEvent
     fun onLivingChangeTarget(event: LivingChangeTargetEvent) {
         if(event.entity.level().isClientSide) return
-        if(event.newTarget == null) return
+        if(event.newTarget !is Player) return
 
         if(event.entity !is Piglin || event.entity !is PiglinBrute) return
         if(!StardustUtils.hasEnchantment(Stardust.PEERING.get(), event.newTarget.getItemBySlot(EquipmentSlot.HEAD))) return

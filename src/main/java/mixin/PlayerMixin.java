@@ -37,10 +37,10 @@ public abstract class PlayerMixin {
     // ENDURANCE
     @Redirect(method = "checkMovementStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;causeFoodExhaustion(F)V"))
     private void checkMovementStatistics(Player instance, float pExhaustion) {
-        if(!StardustUtils.INSTANCE.hasEnchantment(Stardust.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
-            causeFoodExhaustion(pExhaustion);
-        } else {
+        if(StardustUtils.INSTANCE.hasEnchantment(Stardust.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
             causeFoodExhaustion(pExhaustion/(1+StardustUtils.INSTANCE.getLevel(Stardust.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))));
+        } else {
+            causeFoodExhaustion(pExhaustion);
         }
     }
 }

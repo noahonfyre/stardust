@@ -21,7 +21,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Charisma (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
 ### Chestplate
-- Stealthiness (III) reduces entity tempt range.
+- Stealthiness (III) has no use currently.
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
 ### Leggings
