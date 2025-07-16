@@ -5,7 +5,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ## 📖 Enchantments
 ### Weapon Enchantments
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
-- Spite (III) currently has no use.
+- Spite (III) has no use currently.
 - Frenzy (III) increases the weapon's attack speed.
 - Electrocution (II) strikes lightning into enemies on hit.
 - Frostbite (II) freezes the enemy on hit.
@@ -18,12 +18,12 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
 ### Helmet
-- Charisma (III) reduces villager trade prices.
-- Peering (III) removes enderman and piglin aggression and reduces skeleton accuracy.
+- Charisma (III) increases the limit of trade exhaustion.
+- Peering (III) removes enderman and piglin aggression.
 ### Chestplate
 - Stealthiness (III) reduces entity tempt range.
 - Remedy restores player stats like hunger and health from incoming experience.
-- Nullification (V) has a small chance to nullify any incoming damage.
+- Nullification (V) grants nullification of any incoming damage to a small chance.
 ### Leggings
 - Endurance (IV) reduces hunger exhaustion.
 - Determination (IV) heals the player faster whilst sneaking.
@@ -31,7 +31,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ### Boots
 - Pacing (III) grants increased movement speed.
 ### Durability Enchantments
-- Reparation repairs the item over time
+- Reparation repairs the item over time when mending is also present.
 - Tenacity makes the item truly unbreakable.
 ### Other Enchantments
 - Soulbound keeps the item in the inventory after death.
