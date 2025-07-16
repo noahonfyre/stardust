@@ -1,0 +1,56 @@
+{
+  "enchantment.stardust.striking": "Ausholen",
+  "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
+  "enchantment.stardust.spite": "Tücke",
+  "enchantment.stardust.spite.desc": "Hat momentan keine Verwendung.",
+  "enchantment.stardust.frenzy": "Rausch",
+  "enchantment.stardust.frenzy.desc": "Erhöht die Angriffsgeschwindigkeit.",
+  "enchantment.stardust.electrocution": "Strömung",
+  "enchantment.stardust.electrocution.desc": "Lässt einen Blitz in den Gegner einschlagen.",
+  "enchantment.stardust.frostbite": "Hirnfrost",
+  "enchantment.stardust.frostbite.desc": "Friert den Gegner ein.",
+  "enchantment.stardust.decay": "Dürre",
+  "enchantment.stardust.decay.desc": "Fügt dem Gegner Wither-Schaden zu.",
+  "enchantment.stardust.gaining": "Ausbeute",
+  "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag aus Entitäten.",
+
+  "enchantment.stardust.wisdom": "Weisheit",
+  "enchantment.stardust.wisdom.desc": "Erhöht den Erfahrungsertrag aus Blöcken.",
+  "enchantment.stardust.reaching": "Ausdehnung",
+  "enchantment.stardust.reaching.desc": "Erhöht die Reichweite des Werkzeuges.",
+
+  "enchantment.stardust.resilience": "Belastbarkeit",
+  "enchantment.stardust.resilience.desc": "Erhöht die Rüstungshärte der Rüstung.",
+  "enchantment.stardust.sheltering": "Barrikade",
+  "enchantment.stardust.sheltering.desc": "Erhöht die Rüstungspunkte der Rüstung.",
+
+  "enchantment.stardust.charisma": "Charisma",
+  "enchantment.stardust.charisma.desc": "Erhöht die Grenze der Sperre der Handelsangebote.",
+  "enchantment.stardust.peering": "Späherei",
+  "enchantment.stardust.peering.desc": "Entfernt die Aggression von Endermen und Piglins.",
+
+  "enchantment.stardust.stealthiness": "Heimlichkeit",
+  "enchantment.stardust.stealthiness.desc": "Reduziert den Entitäten-Versuchungsbereich.",
+  "enchantment.stardust.remedy": "Auffrischung",
+  "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch Erfahrungspunkte wieder her.",
+  "enchantment.stardust.nullification": "Annullierung",
+  "enchantment.stardust.nullification.desc": "Kann zu einer kleinen Wahrscheinlichkeit eingehenden Schaden annullieren.",
+
+  "enchantment.stardust.endurance": "Aushaltevermögen",
+  "enchantment.stardust.endurance.desc": "Reduziert Erschöpfung durch körperliche Aktivitäten.",
+  "enchantment.stardust.determination": "Entschlossenheit",
+  "enchantment.stardust.determination.desc": "Heilt den Spieler schneller, während er schleicht.",
+  "enchantment.stardust.stability": "Beständigkeit",
+  "enchantment.stardust.stability.desc": "Gewährt Rückstoßwiderstand.",
+
+  "enchantment.stardust.pacing": "Schneller Schritt",
+  "enchantment.stardust.pacing.desc": "Gewährt schnellere Schrittgeschwindigkeit.",
+
+  "enchantment.stardust.reparation": "Ausbesserung",
+  "enchantment.stardust.reparation.desc": "Repariert das Werkzeug über die Zeit, wenn es ebenfalls mit Reparatur verzaubert ist.",
+  "enchantment.stardust.tenacity": "Zuverlässigkeit",
+  "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar.",
+
+  "enchantment.stardust.soulbound": "Bewahrung",
+  "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand im Inventar nach dem Tod."
+}

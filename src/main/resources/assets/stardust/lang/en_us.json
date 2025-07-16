@@ -1,0 +1,56 @@
+{
+  "enchantment.stardust.striking": "Striking",
+  "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
+  "enchantment.stardust.spite": "Spite",
+  "enchantment.stardust.spite.desc": "Has no use currently",
+  "enchantment.stardust.frenzy": "Frenzy",
+  "enchantment.stardust.frenzy.desc": "Increases the weapon's attack speed.",
+  "enchantment.stardust.electrocution": "Electrocution",
+  "enchantment.stardust.electrocution.desc": "Strikes lightning into enemies on hit.",
+  "enchantment.stardust.frostbite": "Frostbite",
+  "enchantment.stardust.frostbite.desc": "Freezes the enemy on hit.",
+  "enchantment.stardust.decay": "Decay",
+  "enchantment.stardust.decay.desc": "Inflicts wither on the enemy on hit.",
+  "enchantment.stardust.gaining": "Gaining",
+  "enchantment.stardust.gaining.desc": "Increases experience yield from entities.",
+
+  "enchantment.stardust.wisdom": "Wisdom",
+  "enchantment.stardust.wisdom.desc": "Increases experience yield from blocks.",
+  "enchantment.stardust.reaching": "Reaching",
+  "enchantment.stardust.reaching.desc": "Increases the reach distance of the tool.",
+
+  "enchantment.stardust.resilience": "Resilience",
+  "enchantment.stardust.resilience.desc": "Increases armor toughness.",
+  "enchantment.stardust.sheltering": "Sheltering",
+  "enchantment.stardust.sheltering.desc": "Increases armor points.",
+
+  "enchantment.stardust.charisma": "Charisma",
+  "enchantment.stardust.charisma.desc": "Increases the limit of trade exhaustion.",
+  "enchantment.stardust.peering": "Peering",
+  "enchantment.stardust.peering.desc": "Removes enderman and piglin aggression.",
+
+  "enchantment.stardust.stealthiness": "Stealthiness",
+  "enchantment.stardust.stealthiness.desc": "Reduces entity tempt range.",
+  "enchantment.stardust.remedy": "Remedy",
+  "enchantment.stardust.remedy.desc": "Restores player stats like hunger and health from incoming experience.",
+  "enchantment.stardust.nullification": "Nullification",
+  "enchantment.stardust.nullification.desc": "Grants nullification of any incoming damage to a small chance.",
+
+  "enchantment.stardust.endurance": "Endurance",
+  "enchantment.stardust.endurance.desc": "Reduces hunger exhaustion.",
+  "enchantment.stardust.determination": "Determination",
+  "enchantment.stardust.determination.desc": "Heals the player faster whilst sneaking.",
+  "enchantment.stardust.stability": "Stability",
+  "enchantment.stardust.stability.desc": "Grants partial knockback resistance.",
+
+  "enchantment.stardust.pacing": "Pacing",
+  "enchantment.stardust.pacing.desc": "Grants increased movement speed.",
+
+  "enchantment.stardust.reparation": "Reparation",
+  "enchantment.stardust.reparation.desc": "Repairs the item over time when mending is also present.",
+  "enchantment.stardust.tenacity": "Tenacity",
+  "enchantment.stardust.tenacity.desc": "Makes the item truly unbreakable.",
+
+  "enchantment.stardust.soulbound": "Soulbound",
+  "enchantment.stardust.soulbound.desc": "Keeps the item in the inventory after death."
+}
