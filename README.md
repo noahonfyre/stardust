@@ -27,7 +27,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
 ### Helmet Enchantments
-- Consuming (III) increases the limit of trade exhaustion.
+- Consuming (III) Increases eating and drinking speed.
 - Charisma (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
 ### Chestplate Enchantments
