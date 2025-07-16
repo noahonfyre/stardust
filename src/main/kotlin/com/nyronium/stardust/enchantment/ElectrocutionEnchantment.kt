@@ -13,7 +13,7 @@ class ElectrocutionEnchantment : StardustEnchantment(Rarity.UNCOMMON, Enchantmen
         if(pAttacker.level().isClientSide) return
 
         val random = (0..100).random()
-        if(random <= 5*pLevel) {
+        if(random <= 2.5*pLevel) {
             EntityType.LIGHTNING_BOLT.spawn(
                 pAttacker.level() as ServerLevel,
                 null,
