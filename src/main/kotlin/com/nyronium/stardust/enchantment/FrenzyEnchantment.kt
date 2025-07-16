@@ -12,7 +12,7 @@ class FrenzyEnchantment : StardustEnchantment(Rarity.VERY_RARE, EnchantmentCateg
             EquipmentSlot.MAINHAND,
             Attributes.ATTACK_SPEED,
             UUID.fromString("c4f8833d-33a5-446b-b95d-9e21a240dfd6")
-        ) { level -> 0.4*level }
+        ) { level -> 0.2*level }
     }
 
     override fun getMaxLevel() = 3
