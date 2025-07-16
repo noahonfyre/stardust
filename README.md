@@ -2,12 +2,15 @@
 
 ---
 
-Stardust currently adds 20+ new vanilla-style enchantments to the game with even more to come.
+Stardust currently adds **20+ new vanilla-style enchantments** to the game with even more to come.
 It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
 
 ---
 
 ![Enchantments](https://cdn.modrinth.com/data/cached_images/a0cb27e6bb095c42a47d6c2690b764ec691d0a31.png)
+
+---
+
 ### Weapon Enchantments
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
 - Spite (III) has no use currently.
@@ -22,18 +25,18 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ### Armor Enchantments
 - Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
-### Helmet
+### Helmet Enchantments
 - Charisma (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
-### Chestplate
+### Chestplate Enchantments
 - Stealthiness (III) has no use currently.
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
-### Leggings
+### Leggings Enchantments
 - Endurance (IV) reduces hunger exhaustion.
 - Determination (IV) heals the player faster whilst sneaking.
 - Stability (IV) grants partial knockback resistance.
-### Boots
+### Boots Enchantments
 - Pacing (III) grants increased movement speed.
 ### Durability Enchantments
 - Reparation repairs the item over time when mending is also present.
@@ -41,8 +44,21 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ### Other Enchantments
 - Soulbound keeps the item in the inventory after death.
 
+---
+
 ![Features](https://cdn.modrinth.com/data/cached_images/0560f26b0428dfd6ebe962c5acec6e2e64d6972e.png)
-- Removes the "Too expensive!" level limitation in anvils.
+
+---
+
+- 20+ new vanilla-style enchantments with unique mechanics.
+- No more "Too expensive!" level limitation in anvils.
+- English & German translations for both enchantments and their descriptions.
+
+---
 
 ![Suggestions](https://cdn.modrinth.com/data/cached_images/e8f1f4e97960dde4ec48c77431149b29d97098f1.png)
+
+---
+
 - Get [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) for additional in-game descriptions for each enchantment.
+- All enchantments should be compatible with [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)'s overenchanting mechanic.
