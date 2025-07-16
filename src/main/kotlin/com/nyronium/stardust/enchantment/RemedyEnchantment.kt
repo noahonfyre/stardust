@@ -4,6 +4,4 @@ import com.nyronium.stardust.enchantment.infrastructure.StardustEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
-class CharismaEnchantment : StardustEnchantment(Rarity.COMMON, EnchantmentCategory.ARMOR_HEAD, arrayOf(EquipmentSlot.HEAD)) {
-    override fun getMaxLevel() = 3
-}
+class RemedyEnchantment : StardustEnchantment(Rarity.VERY_RARE, EnchantmentCategory.ARMOR_CHEST, arrayOf(EquipmentSlot.CHEST))

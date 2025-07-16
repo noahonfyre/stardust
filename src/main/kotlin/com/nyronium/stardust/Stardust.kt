@@ -40,12 +40,15 @@ object Stardust {
     val CHARISMA: RegistryObject<Enchantment> = REGISTRY.register("charisma") { CharismaEnchantment() }
     val PEERING: RegistryObject<Enchantment> = REGISTRY.register("peering") { CharismaEnchantment() }
 
+    val NULLIFICATION: RegistryObject<Enchantment> = REGISTRY.register("nullification") { NullificationEnchantment() }
+
     val ENDURANCE: RegistryObject<Enchantment> = REGISTRY.register("endurance") { EnduranceEnchantment() }
     val DETERMINATION: RegistryObject<Enchantment> = REGISTRY.register("determination") { DeterminationEnchantment() }
     val STABILITY: RegistryObject<Enchantment> = REGISTRY.register("stability") { StabilityEnchantment() }
 
     val PACING: RegistryObject<Enchantment> = REGISTRY.register("pacing") { PacingEnchantment() }
 
+    val REPARATION: RegistryObject<Enchantment> = REGISTRY.register("reparation") { ReparationEnchantment() }
     val TENACITY: RegistryObject<Enchantment> = REGISTRY.register("tenacity") { TenacityEnchantment() }
 
     val SOULBOUND: RegistryObject<Enchantment> = REGISTRY.register("soulbound") { TenacityEnchantment() }

@@ -5,9 +5,11 @@ import com.nyronium.stardust.misc.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.monster.piglin.Piglin
 import net.minecraft.world.entity.monster.piglin.PiglinBrute
+import net.minecraft.world.entity.player.Player
 import net.minecraftforge.event.TickEvent
 import net.minecraftforge.event.entity.living.EnderManAngerEvent
 import net.minecraftforge.event.entity.living.LivingChangeTargetEvent
+import net.minecraftforge.event.entity.living.LivingHurtEvent
 import net.minecraftforge.event.entity.player.CriticalHitEvent
 import net.minecraftforge.event.level.BlockEvent
 import net.minecraftforge.eventbus.api.Event
@@ -17,6 +19,21 @@ import net.minecraftforge.fml.common.Mod
 @Mod.EventBusSubscriber(modid = Stardust.ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 object EventHandler {
     var tickTasks = mutableListOf<(TickEvent.PlayerTickEvent) -> Unit>()
+
+    @SubscribeEvent
+    fun onLivingHurt(event: LivingHurtEvent) {
+        if(event.entity.level().isClientSide) return
+        if(event.entity !is Player) return
+        val player = event.entity as Player
+
+        if(!StardustUtils.hasEnchantment(Stardust.NULLIFICATION.get(), player.getItemBySlot(EquipmentSlot.CHEST))) return
+        val nullificationLevel = StardustUtils.getLevel(Stardust.NULLIFICATION.get(), player.getItemBySlot(EquipmentSlot.CHEST))
+
+        val random = (0..100).random()
+        if(random <= nullificationLevel) {
+            event.isCanceled = true
+        }
+    }
 
     @SubscribeEvent
     fun onCriticalHit(event: CriticalHitEvent) {
