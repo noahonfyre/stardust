@@ -96,6 +96,12 @@ repositories {
         url = 'https://thedarkcolour.github.io/KotlinForForge/'
         content { includeGroup "thedarkcolour" }
     }
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 }
 
 dependencies {
@@ -104,6 +110,9 @@ dependencies {
 
     implementation "thedarkcolour:kotlinforforge:$kff_version"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+
+    implementation fg.deobf("curse.maven:enchantment-descriptions-250419:5855251")
+    implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
 }
 
 mixin {
