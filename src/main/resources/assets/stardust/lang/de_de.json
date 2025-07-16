@@ -3,6 +3,8 @@
   "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
   "enchantment.stardust.spite": "Tücke",
   "enchantment.stardust.spite.desc": "Hat momentan keine Verwendung.",
+  "enchantment.stardust.rampage": "Randale",
+  "enchantment.stardust.rampage.desc": "Heilt den Spieler nach einem Kill.",
   "enchantment.stardust.frenzy": "Rausch",
   "enchantment.stardust.frenzy.desc": "Erhöht die Angriffsgeschwindigkeit.",
   "enchantment.stardust.electrocution": "Strömung",
@@ -24,6 +26,8 @@
   "enchantment.stardust.sheltering": "Barrikade",
   "enchantment.stardust.sheltering.desc": "Erhöht die Rüstungspunkte der Rüstung.",
 
+  "enchantment.stardust.consumption": "Verschlingen",
+  "enchantment.stardust.consumption.desc": "Erhöht die Essens- und Trinkgeschwindigkeit.",
   "enchantment.stardust.charisma": "Charisma",
   "enchantment.stardust.charisma.desc": "Erhöht die Grenze der Sperre der Handelsangebote.",
   "enchantment.stardust.peering": "Späherei",

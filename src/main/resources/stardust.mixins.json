@@ -4,10 +4,11 @@
   "package": "mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractVillagerMixin",
     "AnvilMenuMixin",
     "InventoryAccessor",
-    "PlayerMixin",
-    "AbstractVillagerMixin"
+    "PiglinAiMixin",
+    "PlayerMixin"
   ],
   "client": [
     "AnvilScreenMixin"

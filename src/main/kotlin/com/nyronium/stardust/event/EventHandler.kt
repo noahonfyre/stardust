@@ -3,14 +3,10 @@ package com.nyronium.stardust.event
 import com.nyronium.stardust.Stardust
 import com.nyronium.stardust.misc.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
-import net.minecraft.world.entity.monster.piglin.Piglin
-import net.minecraft.world.entity.monster.piglin.PiglinBrute
 import net.minecraft.world.entity.player.Player
+import net.minecraft.world.item.UseAnim
 import net.minecraftforge.event.TickEvent
-import net.minecraftforge.event.entity.living.EnderManAngerEvent
-import net.minecraftforge.event.entity.living.LivingChangeTargetEvent
-import net.minecraftforge.event.entity.living.LivingHealEvent
-import net.minecraftforge.event.entity.living.LivingHurtEvent
+import net.minecraftforge.event.entity.living.*
 import net.minecraftforge.event.entity.player.CriticalHitEvent
 import net.minecraftforge.event.entity.player.PlayerXpEvent
 import net.minecraftforge.event.level.BlockEvent
@@ -68,14 +64,24 @@ object EventHandler {
     }
 
     @SubscribeEvent
+    fun onLivingDeath(event: LivingDeathEvent) {
+        if(event.entity.level().isClientSide) return
+        if(event.source.entity == null && event.source.entity !is Player) return
+        val source = event.source.entity!! as Player
+
+        if(!StardustUtils.hasEnchantment(Stardust.RAMPAGE.get(), source.getItemBySlot(EquipmentSlot.MAINHAND))) return
+        val rampageLevel = StardustUtils.getLevel(Stardust.RAMPAGE.get(), source.getItemBySlot(EquipmentSlot.MAINHAND))
+        source.heal((source.maxHealth/3)*rampageLevel/Stardust.RAMPAGE.get().maxLevel)
+    }
+
+    @SubscribeEvent
     fun onCriticalHit(event: CriticalHitEvent) {
         val player = event.entity
         if(player.level().isClientSide) return
-
         if(!event.isVanillaCritical) return
         if(StardustUtils.hasEnchantment(Stardust.STRIKING.get(), player.getItemBySlot(EquipmentSlot.MAINHAND))) {
             val strikingLevel = StardustUtils.getLevel(Stardust.STRIKING.get(), player.getItemBySlot(EquipmentSlot.MAINHAND))
-            event.damageModifier *= 1+strikingLevel/Stardust.STRIKING.get().maxLevel
+            event.damageModifier = 1f+strikingLevel/Stardust.STRIKING.get().maxLevel
             event.result = Event.Result.ALLOW
             return
         }
@@ -83,13 +89,15 @@ object EventHandler {
     }
 
     @SubscribeEvent
-    fun onLivingChangeTarget(event: LivingChangeTargetEvent) {
+    fun onLivingStartUseItem(event: LivingEntityUseItemEvent.Start) {
         if(event.entity.level().isClientSide) return
-        if(event.newTarget !is Player) return
+        if(event.entity !is Player) return
+        val player = event.entity as Player
 
-        if(event.entity !is Piglin || event.entity !is PiglinBrute) return
-        if(!StardustUtils.hasEnchantment(Stardust.PEERING.get(), event.newTarget.getItemBySlot(EquipmentSlot.HEAD))) return
-        event.isCanceled = true
+        if(!StardustUtils.hasEnchantment(Stardust.CONSUMPTION.get(), player.getItemBySlot(EquipmentSlot.HEAD))) return
+        val consumptionLevel = StardustUtils.getLevel(Stardust.CONSUMPTION.get(), player.getItemBySlot(EquipmentSlot.HEAD))
+        if(event.item.useAnimation != UseAnim.EAT && event.item.useAnimation != UseAnim.DRINK) return
+        event.duration /= 1+consumptionLevel/Stardust.CONSUMPTION.get().maxLevel
     }
 
     @SubscribeEvent

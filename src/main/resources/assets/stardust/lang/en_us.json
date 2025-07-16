@@ -3,6 +3,8 @@
   "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
   "enchantment.stardust.spite": "Spite",
   "enchantment.stardust.spite.desc": "Has no use currently.",
+  "enchantment.stardust.rampage": "Rampage",
+  "enchantment.stardust.rampage.desc": "Heals the player after a kill.",
   "enchantment.stardust.frenzy": "Frenzy",
   "enchantment.stardust.frenzy.desc": "Increases the weapon's attack speed.",
   "enchantment.stardust.electrocution": "Electrocution",
@@ -24,6 +26,8 @@
   "enchantment.stardust.sheltering": "Sheltering",
   "enchantment.stardust.sheltering.desc": "Increases armor points.",
 
+  "enchantment.stardust.consumption": "Consumption",
+  "enchantment.stardust.consumption.desc": "Increases eating and drinking speed.",
   "enchantment.stardust.charisma": "Charisma",
   "enchantment.stardust.charisma.desc": "Increases the limit of trade exhaustion.",
   "enchantment.stardust.peering": "Peering",
