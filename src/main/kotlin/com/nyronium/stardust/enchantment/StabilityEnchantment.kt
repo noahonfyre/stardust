@@ -13,7 +13,7 @@ class StabilityEnchantment : StardustEnchantment(Rarity.UNCOMMON, EnchantmentCat
             EquipmentSlot.LEGS,
             Attributes.KNOCKBACK_RESISTANCE,
             UUID.fromString("83774500-fc34-45b2-937a-44773e61ebaf"),
-        ) { level -> 0.5*(level/Stardust.STABILITY.get().maxLevel) }
+        ) { level -> 0.15*(level/Stardust.STABILITY.get().maxLevel) }
     }
 
     override fun getMaxLevel() = 4
