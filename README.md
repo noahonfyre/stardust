@@ -14,6 +14,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ### Weapon Enchantments
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
 - Spite (III) has no use currently.
+- Rampage (V) heals the player after a kill.
 - Frenzy (III) increases the weapon's attack speed.
 - Electrocution (II) strikes lightning into enemies on hit.
 - Frostbite (II) freezes the enemy on hit.
@@ -27,6 +28,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Sheltering (IV) increases armor points.
 ### Helmet Enchantments
 - Charisma (III) increases the limit of trade exhaustion.
+- Consuming (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
 ### Chestplate Enchantments
 - Stealthiness (III) has no use currently.
