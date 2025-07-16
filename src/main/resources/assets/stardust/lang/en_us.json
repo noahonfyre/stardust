@@ -2,7 +2,7 @@
   "enchantment.stardust.striking": "Striking",
   "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
   "enchantment.stardust.spite": "Spite",
-  "enchantment.stardust.spite.desc": "Has no use currently",
+  "enchantment.stardust.spite.desc": "Has no use currently.",
   "enchantment.stardust.frenzy": "Frenzy",
   "enchantment.stardust.frenzy.desc": "Increases the weapon's attack speed.",
   "enchantment.stardust.electrocution": "Electrocution",
@@ -30,7 +30,7 @@
   "enchantment.stardust.peering.desc": "Removes enderman and piglin aggression.",
 
   "enchantment.stardust.stealthiness": "Stealthiness",
-  "enchantment.stardust.stealthiness.desc": "Reduces entity tempt range.",
+  "enchantment.stardust.stealthiness.desc": "Has no use currently.",
   "enchantment.stardust.remedy": "Remedy",
   "enchantment.stardust.remedy.desc": "Restores player stats like hunger and health from incoming experience.",
   "enchantment.stardust.nullification": "Nullification",
