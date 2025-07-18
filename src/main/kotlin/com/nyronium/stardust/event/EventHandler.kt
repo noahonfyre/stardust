@@ -71,7 +71,7 @@ object EventHandler {
 
         if(!StardustUtils.hasEnchantment(Stardust.RAMPAGE.get(), source.getItemBySlot(EquipmentSlot.MAINHAND))) return
         val rampageLevel = StardustUtils.getLevel(Stardust.RAMPAGE.get(), source.getItemBySlot(EquipmentSlot.MAINHAND))
-        source.heal((source.maxHealth/3)*rampageLevel/Stardust.RAMPAGE.get().maxLevel)
+        source.heal((source.maxHealth/4)*rampageLevel/Stardust.RAMPAGE.get().maxLevel)
     }
 
     @SubscribeEvent
