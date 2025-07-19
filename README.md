@@ -71,7 +71,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ---
 
-### Q: Port to version/modloader?
+### Q: Port to version/loader?
 Not at the moment, Sorry.
 
 ### Q: Can I use this in my Modpack?
