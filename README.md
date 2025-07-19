@@ -2,7 +2,7 @@
 
 ---
 
-Stardust currently adds **25+ new vanilla-style enchantments** to the game with even more to come.
+Stardust currently adds **20+ new vanilla-style enchantments** to the game with even more to come.
 It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
 
 ---
@@ -52,7 +52,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ---
 
-- 25+ new vanilla-style enchantments with unique mechanics.
+- 20+ new vanilla-style enchantments with unique mechanics.
 - No more "Too expensive!" level limitation in anvils.
 - English & German translations for both enchantments and their descriptions.
 
@@ -62,5 +62,17 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ---
 
-- Get [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) for additional in-game descriptions for each enchantment.
+- Use [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) for additional in-game descriptions for each enchantment.
 - All enchantments should be compatible with [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)'s overenchanting mechanic.
+
+---
+
+![FAQ](https://cdn.modrinth.com/data/cached_images/cec8e6e276e1b8b05eb3f498ebc71d0ce481d559.png)
+
+---
+
+### Q: Port to version/modloader?
+Not at the moment, Sorry.
+
+### Q: Can I use this in my Modpack?
+[Sure](https://support.modrinth.com/en/articles/8797527-obtaining-modpack-permissions), as long as it's only hosted on Modrinth!
