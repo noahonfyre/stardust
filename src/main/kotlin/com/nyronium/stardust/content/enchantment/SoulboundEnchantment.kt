@@ -5,7 +5,6 @@ import com.nyronium.stardust.content.enchantment.infrastructure.ObtainingConfigu
 import com.nyronium.stardust.content.enchantment.infrastructure.StardustEnchantment
 import com.nyronium.stardust.core.StardustExtensions
 import com.nyronium.stardust.core.StardustUtils
-import net.minecraft.network.chat.Component
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraftforge.event.entity.player.PlayerEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
@@ -26,7 +25,6 @@ class SoulboundEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val newPlayer = event.entity
 
         for (slot in 0 until oldPlayer.inventory.containerSize) {
-            event.entity.sendSystemMessage(Component.literal(oldPlayer.inventory.getItem(slot).displayName.string))
             val stack = oldPlayer.inventory.getItem(slot)
             if (!stack.isEmpty && StardustUtils.hasEnchantment(this, stack)) {
                 newPlayer.inventory.setItem(slot, stack.copy())
