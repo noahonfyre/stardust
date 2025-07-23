@@ -1,7 +1,7 @@
 package mixin;
 
-import com.nyronium.stardust.Stardust;
-import com.nyronium.stardust.misc.StardustUtils;
+import com.nyronium.stardust.core.StardustRegistry;
+import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Inventory;
@@ -26,7 +26,7 @@ public abstract class PlayerMixin {
         for(List<ItemStack> list : compartments) {
             for(int i = 0; i < list.size(); ++i) {
                 ItemStack itemstack = list.get(i);
-                if (!itemstack.isEmpty() && !StardustUtils.INSTANCE.hasEnchantment(Stardust.INSTANCE.getSOULBOUND().get(), itemstack)) {
+                if (!itemstack.isEmpty() && !StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getSOULBOUND().get(), itemstack)) {
                     instance.player.drop(itemstack, true, false);
                     list.set(i, ItemStack.EMPTY);
                 }
@@ -37,8 +37,8 @@ public abstract class PlayerMixin {
     // ENDURANCE
     @Redirect(method = "checkMovementStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;causeFoodExhaustion(F)V"))
     private void checkMovementStatistics(Player instance, float pExhaustion) {
-        if(StardustUtils.INSTANCE.hasEnchantment(Stardust.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
-            causeFoodExhaustion(pExhaustion/(1+StardustUtils.INSTANCE.getLevel(Stardust.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))));
+        if(StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
+            causeFoodExhaustion(pExhaustion/(1+StardustUtils.INSTANCE.getEnchantmentLevel(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))));
         } else {
             causeFoodExhaustion(pExhaustion);
         }

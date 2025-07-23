@@ -1,7 +1,7 @@
 package mixin;
 
-import com.nyronium.stardust.Stardust;
-import com.nyronium.stardust.misc.StardustUtils;
+import com.nyronium.stardust.core.StardustRegistry;
+import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;
@@ -15,8 +15,8 @@ public class PiglinAiMixin {
     @Inject(method = "isWearingGold", at = @At("RETURN"), cancellable = true)
     private static void isWearingGold(LivingEntity pLivingEntity, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(
-                cir.getReturnValue()|| StardustUtils.INSTANCE.hasEnchantment(
-                        Stardust.INSTANCE.getPEERING().get(),
+                cir.getReturnValue() || StardustUtils.INSTANCE.hasEnchantment(
+                        StardustRegistry.INSTANCE.getPEERING().get(),
                         pLivingEntity.getItemBySlot(EquipmentSlot.HEAD)
                 )
         );

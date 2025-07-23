@@ -1,7 +1,7 @@
 package mixin;
 
-import com.nyronium.stardust.Stardust;
-import com.nyronium.stardust.misc.StardustUtils;
+import com.nyronium.stardust.core.StardustRegistry;
+import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
@@ -17,14 +17,14 @@ public class AbstractVillagerMixin {
         AbstractVillager villager = (AbstractVillager) (Object) this;
         Player player = villager.getTradingPlayer();
         if(player == null) return;
-        if(!StardustUtils.INSTANCE.hasEnchantment(Stardust.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD))){
+        if(!StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD))){
             instance.increaseUses();
             return;
         }
 
-        int level = StardustUtils.INSTANCE.getLevel(Stardust.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD));
+        int level = StardustUtils.INSTANCE.getEnchantmentLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD));
         int random = (int) (Math.random()*100);
-        if(!(random <= 100*(level/Stardust.INSTANCE.getCHARISMA().get().getMaxLevel()))) {
+        if(!(random <= 100*(level/StardustRegistry.INSTANCE.getCHARISMA().get().getMaxLevel()))) {
             instance.increaseUses();
         }
 
