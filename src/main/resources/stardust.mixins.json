@@ -11,7 +11,8 @@
     "PlayerMixin"
   ],
   "client": [
-    "AnvilScreenMixin"
+    "AnvilScreenMixin",
+    "EntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

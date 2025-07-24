@@ -24,7 +24,7 @@ class ObtainingConfiguration(val rarity: Rarity) {
         return this
     }
 
-    fun enchantableViaEnchantingTable(): ObtainingConfiguration {
+    fun enchantingTable(): ObtainingConfiguration {
         isEnchantableViaEnchantingTable = true
         return this
     }
@@ -39,7 +39,7 @@ class ObtainingConfiguration(val rarity: Rarity) {
         return this
     }
 
-    fun notEnchantableViaEnchantingTable(): ObtainingConfiguration {
+    fun noEnchantingTable(): ObtainingConfiguration {
         isEnchantableViaEnchantingTable = false
         return this
     }
