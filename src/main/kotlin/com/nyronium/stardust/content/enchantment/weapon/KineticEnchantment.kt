@@ -10,7 +10,6 @@ import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.event.entity.living.LivingHurtEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
-import kotlin.math.abs
 import kotlin.math.roundToInt
 
 class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
@@ -33,14 +32,12 @@ class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(!attacker.getItemBySlot(EquipmentSlot.MAINHAND).hasEnchantment(this)) return
         val kineticLevel = attacker.getItemBySlot(EquipmentSlot.MAINHAND).getEnchantmentLevel(this)
 
-        val kineticEnergy = abs(attacker.deltaMovement.y.roundToInt()*20)
-        attacker.sendSystemMessage(Component.literal(kineticEnergy.toString()))
-        if(kineticEnergy <= 15) return
+        val kineticEnergy = attacker.fallDistance.roundToInt()
+        if(kineticEnergy <= 5) return
 
-        event.amount *= 1 + (kineticEnergy/20)*(kineticLevel/maxLevel)
+        event.amount *= 1+(kineticEnergy/15).coerceAtMost(1)*(kineticLevel/maxLevel)
         attacker.resetFallDistance()
 
-        attacker.sendSystemMessage(Component.literal((kineticEnergy*(kineticLevel/maxLevel)).toString()))
-        attacker.sendSystemMessage(Component.literal(event.amount.toString()))
+        attacker.sendSystemMessage(Component.literal(((kineticEnergy/20).coerceAtMost(1)*(kineticLevel/maxLevel)).toString()))
     }
 }
