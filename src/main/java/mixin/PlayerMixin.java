@@ -16,6 +16,7 @@ import java.util.List;
 
 @Mixin(Player.class)
 public abstract class PlayerMixin {
+
     @Shadow
     public abstract void causeFoodExhaustion(float pExhaustion);
 
