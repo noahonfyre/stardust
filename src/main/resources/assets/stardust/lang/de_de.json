@@ -26,6 +26,8 @@
   "enchantment.stardust.sheltering": "Barrikade",
   "enchantment.stardust.sheltering.desc": "Erhöht die Rüstungspunkte der Rüstung.",
 
+  "enchantment.stardust.stealthiness": "Heimlichkeit",
+  "enchantment.stardust.stealthiness.desc": "Versteckt das Namensschild des Spielers.",
   "enchantment.stardust.consumption": "Verschlingen",
   "enchantment.stardust.consumption.desc": "Erhöht die Essens- und Trinkgeschwindigkeit.",
   "enchantment.stardust.charisma": "Charisma",
@@ -33,8 +35,6 @@
   "enchantment.stardust.peering": "Späherei",
   "enchantment.stardust.peering.desc": "Entfernt die Aggression von Endermen und Piglins.",
 
-  "enchantment.stardust.stealthiness": "Heimlichkeit",
-  "enchantment.stardust.stealthiness.desc": "Hat momentan keine Verwendung.",
   "enchantment.stardust.remedy": "Auffrischung",
   "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch Erfahrungspunkte wieder her.",
   "enchantment.stardust.nullification": "Annullierung",

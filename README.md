@@ -27,11 +27,11 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
 ### Helmet Enchantments
+- Stealthiness (III) hides the player's nametag.
 - Consuming (III) Increases eating and drinking speed.
 - Charisma (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
 ### Chestplate Enchantments
-- Stealthiness (III) has no use currently.
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
 ### Leggings Enchantments

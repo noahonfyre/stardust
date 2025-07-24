@@ -26,6 +26,8 @@
   "enchantment.stardust.sheltering": "Sheltering",
   "enchantment.stardust.sheltering.desc": "Increases armor points.",
 
+  "enchantment.stardust.stealthiness": "Stealthiness",
+  "enchantment.stardust.stealthiness.desc": "Hides the player's nametag.",
   "enchantment.stardust.consumption": "Consumption",
   "enchantment.stardust.consumption.desc": "Increases eating and drinking speed.",
   "enchantment.stardust.charisma": "Charisma",
@@ -33,8 +35,6 @@
   "enchantment.stardust.peering": "Peering",
   "enchantment.stardust.peering.desc": "Removes enderman and piglin aggression.",
 
-  "enchantment.stardust.stealthiness": "Stealthiness",
-  "enchantment.stardust.stealthiness.desc": "Has no use currently.",
   "enchantment.stardust.remedy": "Remedy",
   "enchantment.stardust.remedy.desc": "Restores player stats like hunger and health from incoming experience.",
   "enchantment.stardust.nullification": "Nullification",
