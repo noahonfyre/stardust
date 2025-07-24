@@ -1,6 +1,8 @@
 {
   "enchantment.stardust.striking": "Striking",
   "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
+  "enchantment.stardust.kinetic": "Kinetic",
+  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance you have accumulated.",
   "enchantment.stardust.spite": "Spite",
   "enchantment.stardust.spite.desc": "Has no use currently.",
   "enchantment.stardust.rampage": "Rampage",

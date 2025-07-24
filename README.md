@@ -13,6 +13,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ### Weapon Enchantments
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
+- Kinetic (V) deals more damage the more fall distance you have accumulated.
 - Spite (III) has no use currently.
 - Rampage (V) heals the player after a kill.
 - Frenzy (III) increases the weapon's attack speed.
@@ -28,7 +29,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Sheltering (IV) increases armor points.
 ### Helmet Enchantments
 - Stealthiness (III) hides the player's nametag.
-- Consuming (III) Increases eating and drinking speed.
+- Consumption (V) Increases eating and drinking speed.
 - Charisma (III) increases the limit of trade exhaustion.
 - Peering (III) removes enderman and piglin aggression.
 ### Chestplate Enchantments

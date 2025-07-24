@@ -12,7 +12,7 @@ import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class ConsumptionEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .maxLevel(3)
+    .maxLevel(5)
     .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
