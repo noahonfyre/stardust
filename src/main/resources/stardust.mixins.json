@@ -6,6 +6,7 @@
   "mixins": [
     "AbstractVillagerMixin",
     "AnvilMenuMixin",
+    "EnchantmentMixin",
     "InventoryAccessor",
     "PiglinAiMixin",
     "PlayerMixin"
