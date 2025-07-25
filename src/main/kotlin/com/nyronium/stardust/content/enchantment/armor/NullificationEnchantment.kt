@@ -12,7 +12,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class NullificationEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default().notTradable())
     .category(EnchantmentCategory.ARMOR_CHEST)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {
