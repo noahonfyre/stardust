@@ -44,6 +44,8 @@
 
   "enchantment.stardust.endurance": "Aushaltevermögen",
   "enchantment.stardust.endurance.desc": "Reduziert Erschöpfung durch körperliche Aktivitäten.",
+  "enchantment.stardust.drift": "Dynamisch",
+  "enchantment.stardust.drift.desc": "Erhöht die Geschwindigkeit während des Schwimmens.",
   "enchantment.stardust.determination": "Entschlossenheit",
   "enchantment.stardust.determination.desc": "Heilt den Spieler schneller, während er schleicht.",
   "enchantment.stardust.stability": "Beständigkeit",

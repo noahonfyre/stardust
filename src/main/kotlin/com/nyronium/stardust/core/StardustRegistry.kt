@@ -41,6 +41,7 @@ object StardustRegistry {
     val NULLIFICATION: RegistryObject<Enchantment> = REGISTRY.register("nullification") { NullificationEnchantment() }
 
     val ENDURANCE: RegistryObject<Enchantment> = REGISTRY.register("endurance") { EnduranceEnchantment() }
+    val DRIFT: RegistryObject<Enchantment> = REGISTRY.register("drift") { DriftEnchantment() }
     val DETERMINATION: RegistryObject<Enchantment> = REGISTRY.register("determination") { DeterminationEnchantment() }
     val STABILITY: RegistryObject<Enchantment> = REGISTRY.register("stability") { StabilityEnchantment() }
 

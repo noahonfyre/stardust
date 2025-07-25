@@ -37,6 +37,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Nullification (V) grants nullification of any incoming damage to a small chance.
 ### Leggings Enchantments
 - Endurance (IV) reduces hunger exhaustion.
+- Drift (IV) increases swimming speed.
 - Determination (IV) heals the player faster whilst sneaking.
 - Stability (IV) grants partial knockback resistance.
 ### Boots Enchantments

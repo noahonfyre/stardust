@@ -44,6 +44,8 @@
 
   "enchantment.stardust.endurance": "Endurance",
   "enchantment.stardust.endurance.desc": "Reduces hunger exhaustion.",
+  "enchantment.stardust.drift": "Drift",
+  "enchantment.stardust.drift.desc": "Increases swimming speed.",
   "enchantment.stardust.determination": "Determination",
   "enchantment.stardust.determination.desc": "Heals the player faster whilst sneaking.",
   "enchantment.stardust.stability": "Stability",
