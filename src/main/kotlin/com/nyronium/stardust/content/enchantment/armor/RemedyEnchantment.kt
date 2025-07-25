@@ -11,7 +11,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class RemedyEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default().notEnchantableViaEnchantingTable())
+    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default().noEnchantingTable())
     .category(EnchantmentCategory.ARMOR_CHEST)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {
