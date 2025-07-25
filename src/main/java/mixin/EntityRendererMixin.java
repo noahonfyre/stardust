@@ -25,7 +25,7 @@ public abstract class EntityRendererMixin {
     }
 
     @Inject(method = "renderNameTag", at = @At("RETURN"), cancellable = true)
-    private void shouldShowName(Entity pEntity, Component pDisplayName, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight, CallbackInfo ci){
+    private void renderNameTag(Entity pEntity, Component pDisplayName, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight, CallbackInfo ci){
         if(pEntity instanceof Player player && StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getSTEALTHINESS().get(), player.getItemBySlot(EquipmentSlot.HEAD))) {
             ci.cancel();
         }

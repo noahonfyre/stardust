@@ -14,8 +14,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PiglinAiMixin {
     @Inject(method = "isWearingGold", at = @At("RETURN"), cancellable = true)
     private static void isWearingGold(LivingEntity pLivingEntity, CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(
-                cir.getReturnValue() || StardustUtils.INSTANCE.hasEnchantment(
+        cir.setReturnValue(cir.getReturnValue() ||
+                StardustUtils.INSTANCE.hasEnchantment(
                         StardustRegistry.INSTANCE.getPEERING().get(),
                         pLivingEntity.getItemBySlot(EquipmentSlot.HEAD)
                 )
