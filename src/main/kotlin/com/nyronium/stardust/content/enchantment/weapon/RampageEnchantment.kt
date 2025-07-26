@@ -22,11 +22,12 @@ class RampageEnchantment : StardustEnchantment(EnchantmentConfiguration()
 
     fun onLivingDeath(event: LivingDeathEvent) {
         if(event.entity.level().isClientSide) return
-        if(event.source.entity == null && event.source.entity !is Player) return
+        if(event.source.entity == null) return
+        if(event.source.entity !is Player) return
         val source = event.source.entity!! as Player
 
         if(!StardustUtils.hasEnchantment(this, source.getItemBySlot(EquipmentSlot.MAINHAND))) return
         val rampageLevel = StardustUtils.getEnchantmentLevel(this, source.getItemBySlot(EquipmentSlot.MAINHAND))
-        source.heal((source.maxHealth/4)*rampageLevel/this.maxLevel)
+        source.heal((source.maxHealth/2)*rampageLevel/this.maxLevel)
     }
 }

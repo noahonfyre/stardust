@@ -11,12 +11,12 @@ import net.minecraftforge.common.ForgeMod
 
 class DriftEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().notDiscoverable())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default().notDiscoverable())
     .category(EnchantmentCategory.ARMOR_LEGS)
     .applicableSlots(EquipmentSlot.LEGS)
     .incompatible(Enchantments.SWIFT_SNEAK)
 ) {
     init {
-        registerAttributeModifier(ForgeMod.SWIM_SPEED.get(), AttributeModifier.Operation.MULTIPLY_BASE) { level -> 1.0*level }
+        registerAttributeModifier(ForgeMod.SWIM_SPEED.get(), AttributeModifier.Operation.MULTIPLY_BASE) { level -> 0.5*level }
     }
 }

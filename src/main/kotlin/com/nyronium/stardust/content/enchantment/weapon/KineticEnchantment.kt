@@ -26,7 +26,6 @@ class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(event.entity.level().isClientSide) return
         if(event.source.entity == null) return
         if(event.source.entity !is Player) return
-        val target = event.entity
         val attacker = event.source.entity as Player
 
         if(!attacker.getItemBySlot(EquipmentSlot.MAINHAND).hasEnchantment(this)) return
