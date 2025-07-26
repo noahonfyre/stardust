@@ -110,15 +110,11 @@ dependencies {
 
     implementation "thedarkcolour:kotlinforforge:$kff_version"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    testAnnotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    implementation "org.spongepowered:mixin:0.8.5"
 
     implementation fg.deobf("curse.maven:enchantment-descriptions-250419:5855251")
     implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
-}
-
-mixin {
-    // MixinGradle Settings
-    add sourceSets.main, 'mixins.stardust.refmap.json'
-    config 'stardust.mixins.json'
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -132,6 +128,7 @@ def replaceProperties = [
         mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
         mod_authors: mod_authors, mod_description: mod_description
 ]
+
 processResources {
     inputs.properties replaceProperties
     replaceProperties.put 'project', project
