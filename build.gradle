@@ -1,3 +1,15 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = "https://repo.spongepowered.org/maven"}
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+
 plugins {
     id 'idea'
     id 'maven-publish'
@@ -110,11 +122,19 @@ dependencies {
 
     implementation "thedarkcolour:kotlinforforge:$kff_version"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
-    testAnnotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     implementation "org.spongepowered:mixin:0.8.5"
 
     implementation fg.deobf("curse.maven:enchantment-descriptions-250419:5855251")
     implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
+}
+
+def refmap
+mixin {
+    refmap = add sourceSets.main, 'stardust.refmap.json'
+    config 'stardust.mixins.json'
+
+    debug.verbose = true
+    debug.export = true
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
