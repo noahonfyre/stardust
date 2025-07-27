@@ -36,7 +36,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
 ### Leggings Enchantments
-- Endurance (IV) reduces hunger exhaustion.
+- Endurance (IV) reduces hunger exhaustion. (currently inoperable, will be fixed in v4)
 - Drift (IV) increases swimming speed.
 - Determination (IV) heals the player faster whilst sneaking.
 - Stability (IV) grants partial knockback resistance.
