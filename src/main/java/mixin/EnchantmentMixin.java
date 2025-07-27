@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class EnchantmentMixin {
     @Inject(method = "canEnchant", at = @At("RETURN"), cancellable = true)
     private void canEnchant(ItemStack pStack, CallbackInfoReturnable<Boolean> cir) {
-        if(cir.getReturnValue() || !pStack.is(Tags.Items.TOOLS_CROSSBOWS)) cir.setReturnValue(cir.getReturnValue());
+        if(cir.getReturnValue() || !pStack.is(Tags.Items.TOOLS_CROSSBOWS)) return;
 
         Enchantment pThis = (Enchantment) (Object) this;
         boolean isCompatible = pThis == Enchantments.POWER_ARROWS ||
@@ -22,18 +22,18 @@ public class EnchantmentMixin {
                 pThis == Enchantments.FLAMING_ARROWS ||
                 pThis == Enchantments.INFINITY_ARROWS;
 
-        cir.setReturnValue(isCompatible);
+        cir.setReturnValue(isCompatible || cir.getReturnValue());
     }
 
     @Inject(method = "isCompatibleWith", at = @At("RETURN"), cancellable = true)
     private void isCompatibleWith(Enchantment pOther, CallbackInfoReturnable<Boolean> cir) {
-        if(cir.getReturnValue()) cir.setReturnValue(cir.getReturnValue());
+        if(cir.getReturnValue()) return;
 
         Enchantment pThis = (Enchantment) (Object) this;
         boolean isCompatible = stardust$enchantmentMatch(pThis, pOther, Enchantments.INFINITY_ARROWS, Enchantments.MENDING) ||
                 stardust$enchantmentMatch(pThis, pOther, Enchantments.PIERCING, Enchantments.MULTISHOT);
 
-        cir.setReturnValue(isCompatible);
+        cir.setReturnValue(isCompatible || cir.getReturnValue());
     }
 
     @Unique
