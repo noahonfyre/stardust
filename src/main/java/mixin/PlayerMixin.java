@@ -8,7 +8,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
@@ -16,9 +15,6 @@ import java.util.List;
 
 @Mixin(Player.class)
 public abstract class PlayerMixin {
-
-    @Shadow
-    public abstract void causeFoodExhaustion(float pExhaustion);
 
     // SOULBOUND
     @Redirect(method = "dropEquipment", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Inventory;dropAll()V"))
@@ -39,9 +35,11 @@ public abstract class PlayerMixin {
     @Redirect(method = "checkMovementStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;causeFoodExhaustion(F)V"))
     private void checkMovementStatistics(Player instance, float pExhaustion) {
         if(StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
-            causeFoodExhaustion(pExhaustion/(1+StardustUtils.INSTANCE.getEnchantmentLevel(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))));
+            float v = pExhaustion / (1 + StardustUtils.INSTANCE.getEnchantmentLevel(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS)));
+            System.out.println(v);
         } else {
-            causeFoodExhaustion(pExhaustion);
+            float v = pExhaustion;
+            System.out.println(v);
         }
     }
 }
