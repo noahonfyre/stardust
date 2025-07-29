@@ -1,5 +1,6 @@
 package mixin;
 
+import com.nyronium.stardust.core.ExperienceCostManager;
 import com.nyronium.stardust.core.StardustRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.core.NonNullList;
@@ -41,5 +42,10 @@ public abstract class PlayerMixin {
             float v = pExhaustion;
             System.out.println(v);
         }
+    }
+
+    @Redirect(method = "onEnchantmentPerformed", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V"))
+    private void onEnchantmentPerformed(Player instance, int levels) {
+        ExperienceCostManager.INSTANCE.handleEnchantXp(instance, levels);
     }
 }

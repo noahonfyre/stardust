@@ -8,6 +8,7 @@
     "AbstractVillagerMixin",
     "AnvilMenuMixin",
     "EnchantedBookItemMixin",
+    "EnchantmentMenuMixin",
     "EnchantmentMixin",
     "InventoryAccessor",
     "PiglinAiMixin",

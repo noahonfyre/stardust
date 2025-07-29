@@ -1,9 +1,13 @@
 package mixin;
 
+import com.nyronium.stardust.core.ExperienceCostManager;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AnvilMenu;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
+import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(AnvilMenu.class)
 public class AnvilMenuMixin {
@@ -15,5 +19,10 @@ public class AnvilMenuMixin {
     @ModifyConstant(method = "createResult", constant = @Constant(intValue = 39))
     private int maxLimit(int original) {
         return Integer.MAX_VALUE - 1;
+    }
+
+    @Redirect(method = "onTake", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V"))
+    private void giveExperienceLevels(Player player, int levels) {
+        player.giveExperiencePoints(-ExperienceCostManager.INSTANCE.levelToTotalExperience(-levels));
     }
 }
