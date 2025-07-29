@@ -18,11 +18,8 @@ object StardustRegistry {
     
     val STRIKING: RegistryObject<Enchantment> = REGISTRY.register("striking") { StrikingEnchantment() }
     val KINETIC: RegistryObject<Enchantment> = REGISTRY.register("kinetic") { KineticEnchantment() }
-    val SPITE: RegistryObject<Enchantment> = REGISTRY.register("spite") { SpiteEnchantment() }
     val RAMPAGE: RegistryObject<Enchantment> = REGISTRY.register("rampage") { RampageEnchantment() }
     val FRENZY: RegistryObject<Enchantment> = REGISTRY.register("frenzy") { FrenzyEnchantment() }
-    val ELECTROCUTION: RegistryObject<Enchantment> = REGISTRY.register("electrocution") { ElectrocutionEnchantment() }
-    val FROSTBITE: RegistryObject<Enchantment> = REGISTRY.register("frostbite") { FrostbiteEnchantment() }
     val DECAY: RegistryObject<Enchantment> = REGISTRY.register("decay") { DecayEnchantment() }
     val GAINING: RegistryObject<Enchantment> = REGISTRY.register("gaining") { GainingEnchantment() }
 
@@ -35,7 +32,7 @@ object StardustRegistry {
     val STEALTHINESS: RegistryObject<Enchantment> = REGISTRY.register("stealthiness") { StealthinessEnchantment() }
     val CONSUMPTION: RegistryObject<Enchantment> = REGISTRY.register("consumption") { ConsumptionEnchantment() }
     val CHARISMA: RegistryObject<Enchantment> = REGISTRY.register("charisma") { CharismaEnchantment() }
-    val PEERING: RegistryObject<Enchantment> = REGISTRY.register("peering") { CharismaEnchantment() }
+    val PEERING: RegistryObject<Enchantment> = REGISTRY.register("peering") { PeeringEnchantment() }
 
     val REMEDY: RegistryObject<Enchantment> = REGISTRY.register("remedy") { RemedyEnchantment() }
     val NULLIFICATION: RegistryObject<Enchantment> = REGISTRY.register("nullification") { NullificationEnchantment() }
