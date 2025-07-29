@@ -1,4 +1,6 @@
 {
+  "tooltip.stardust.extend": "Press SHIFT",
+
   "enchantment.stardust.striking": "Striking",
   "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
   "enchantment.stardust.kinetic": "Kinetic",

@@ -1,4 +1,6 @@
 {
+  "tooltip.stardust.extend": "Drücke UMSCHALT",
+
   "enchantment.stardust.striking": "Ausholen",
   "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
   "enchantment.stardust.kinetic": "Sturzflug",
