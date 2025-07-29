@@ -9,18 +9,16 @@ import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
 import net.minecraft.world.entity.player.Player
-import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
+import net.minecraft.world.item.enchantment.Enchantments
 
 class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
     .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
+    .incompatible(Enchantments.FIRE_ASPECT)
 ) {
-    override fun checkCompatibility(pOther: Enchantment): Boolean {
-        return super.checkCompatibility(pOther) && pOther !is ElectrocutionEnchantment && pOther !is FrostbiteEnchantment
-    }
 
     override fun doPostAttack(pAttacker: LivingEntity, pTarget: Entity, pLevel: Int) {
         if(pAttacker.level().isClientSide) return
