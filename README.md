@@ -2,7 +2,7 @@
 
 ---
 
-Stardust currently adds **25+ new vanilla-style enchantments** to the game with even more to come.
+Stardust currently adds **20+ new vanilla-style enchantments** to the game with even more to come.
 It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
 
 ---
@@ -14,11 +14,8 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 ### Weapon Enchantments
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
 - Kinetic (V) deals more damage the more fall distance you have accumulated.
-- Spite (III) has no use currently.
 - Rampage (V) heals the player after a kill.
 - Frenzy (III) increases the weapon's attack speed.
-- Electrocution (II) strikes lightning into enemies on hit.
-- Frostbite (II) freezes the enemy on hit.
 - Decay (II) inflicts wither on the enemy on hit.
 - Gaining (V) increases experience yield from entities.
 ### Tool Enchantments
@@ -29,9 +26,9 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Sheltering (IV) increases armor points.
 ### Helmet Enchantments
 - Stealthiness (III) hides the player's nametag.
-- Consumption (V) Increases eating and drinking speed.
-- Charisma (III) increases the limit of trade exhaustion.
-- Peering (III) removes enderman and piglin aggression.
+- Consumption (V) increases eating and drinking speed.
+- Charisma (III) obtains special prices from villagers.
+- Peering neutralizes enderman and piglin aggression.
 ### Chestplate Enchantments
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
@@ -54,11 +51,13 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ---
 
-- 25+ new vanilla-style enchantments with unique mechanics.
-- Bow enchantments now work on Crossbows!
-- Mending is now compatible with Infinity as well as Piercing with Multishot.
+- 20+ new vanilla-style enchantments with unique mechanics.
+- Flattening of enchantment costs, making them drain the same amount of experience every time.
+- Custom tooltips with extensive new capabilities.
 - No more "Too expensive!" level limitation in anvils.
-- English & German translations for both enchantments and their descriptions.
+- Enchantments incompatible with each other are drastically reduced.
+- Bow enchantments now work on Crossbows!
+- And even more!
 
 ---
 
