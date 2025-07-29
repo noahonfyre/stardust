@@ -14,7 +14,7 @@ import kotlin.math.roundToInt
 
 class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE))
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON))
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

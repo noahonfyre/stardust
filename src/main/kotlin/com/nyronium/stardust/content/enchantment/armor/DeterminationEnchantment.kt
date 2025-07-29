@@ -13,7 +13,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class DeterminationEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).discoverable())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).discoverable())
     .category(EnchantmentCategory.ARMOR_LEGS)
     .applicableSlots(EquipmentSlot.LEGS)
     .incompatible(Enchantments.SWIFT_SNEAK)
@@ -28,7 +28,7 @@ class DeterminationEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val player = event.entity as Player
 
         if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.LEGS))) return
-        val determinationLevel = StardustUtils.getEnchantmentLevel(this, player.getItemBySlot(EquipmentSlot.LEGS))
+        val determinationLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.LEGS))
 
         if(!player.isCrouching) return
 

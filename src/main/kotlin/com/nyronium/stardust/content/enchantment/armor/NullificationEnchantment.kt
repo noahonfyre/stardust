@@ -12,7 +12,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class NullificationEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default().notTradable())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default().notTradable())
     .category(EnchantmentCategory.ARMOR_CHEST)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {
@@ -27,7 +27,7 @@ class NullificationEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val player = event.entity as Player
 
         if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.CHEST))) return
-        val nullificationLevel = StardustUtils.getEnchantmentLevel(this, player.getItemBySlot(EquipmentSlot.CHEST))
+        val nullificationLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.CHEST))
 
         val random = (0..100).random()
         if(random <= nullificationLevel) {

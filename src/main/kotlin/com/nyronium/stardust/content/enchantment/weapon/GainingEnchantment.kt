@@ -11,7 +11,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class GainingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

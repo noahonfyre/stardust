@@ -52,7 +52,7 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
                     attribute.removeModifier(uuid)
                     return@task
                 }
-                val enchantmentLevel = StardustUtils.getEnchantmentLevel(enchantment, player.getItemBySlot(slot))
+                val enchantmentLevel = StardustUtils.getLevel(enchantment, player.getItemBySlot(slot))
                 val hasModifier = attribute.getModifier(uuid) != null
                 val isModifierAmountChanged = attribute.getModifier(uuid)?.amount != valueOfLevel(enchantmentLevel)
 

@@ -11,7 +11,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class ElectrocutionEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

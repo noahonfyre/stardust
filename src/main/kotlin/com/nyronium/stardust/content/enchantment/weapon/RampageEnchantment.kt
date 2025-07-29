@@ -27,7 +27,7 @@ class RampageEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val source = event.source.entity!! as Player
 
         if(!StardustUtils.hasEnchantment(this, source.getItemBySlot(EquipmentSlot.MAINHAND))) return
-        val rampageLevel = StardustUtils.getEnchantmentLevel(this, source.getItemBySlot(EquipmentSlot.MAINHAND))
+        val rampageLevel = StardustUtils.getLevel(this, source.getItemBySlot(EquipmentSlot.MAINHAND))
         source.heal((source.maxHealth/2)*rampageLevel/this.maxLevel)
     }
 }

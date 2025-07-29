@@ -26,7 +26,7 @@ class StrikingEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(player.level().isClientSide) return
         if(!event.isVanillaCritical) return
         if(StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.MAINHAND))) {
-            val strikingLevel = StardustUtils.getEnchantmentLevel(this, player.getItemBySlot(EquipmentSlot.MAINHAND))
+            val strikingLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.MAINHAND))
             event.damageModifier = 1f+strikingLevel/this.maxLevel
             event.result = Event.Result.ALLOW
             return

@@ -22,7 +22,7 @@ public class AbstractVillagerMixin {
             return;
         }
 
-        int level = StardustUtils.INSTANCE.getEnchantmentLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD));
+        int level = StardustUtils.INSTANCE.getLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), player.getItemBySlot(EquipmentSlot.HEAD));
         int random = (int) (Math.random()*100);
         if(!(random <= 100*(level/StardustRegistry.INSTANCE.getCHARISMA().get().getMaxLevel()))) {
             instance.increaseUses();

@@ -11,7 +11,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class WisdomEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
     .category(EnchantmentCategory.DIGGER)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
@@ -23,7 +23,7 @@ class WisdomEnchantment : StardustEnchantment(EnchantmentConfiguration()
     fun onBlockBreak(event: BlockEvent.BreakEvent) {
         val player = event.player
         if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.MAINHAND))) return
-        val wisdomLevel = StardustUtils.getEnchantmentLevel(this, player.getItemBySlot(EquipmentSlot.MAINHAND))
+        val wisdomLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.MAINHAND))
         event.expToDrop *= 1+wisdomLevel/this.maxLevel
     }
 }

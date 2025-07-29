@@ -13,7 +13,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class ConsumptionEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).discoverable())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).discoverable())
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
 ) {
@@ -27,7 +27,7 @@ class ConsumptionEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val player = event.entity as Player
 
         if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.HEAD))) return
-        val consumptionLevel = StardustUtils.getEnchantmentLevel(this, player.getItemBySlot(EquipmentSlot.HEAD))
+        val consumptionLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.HEAD))
         if(event.item.useAnimation != UseAnim.EAT && event.item.useAnimation != UseAnim.DRINK) return
         event.duration /= 1+consumptionLevel/this.maxLevel
     }

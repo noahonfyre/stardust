@@ -11,7 +11,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class PeeringEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default().notTradable())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().notTradable())
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
 ) {

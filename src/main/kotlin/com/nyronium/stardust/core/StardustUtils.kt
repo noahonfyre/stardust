@@ -5,18 +5,18 @@ import net.minecraft.world.item.enchantment.Enchantment
 
 object StardustUtils {
     infix fun ItemStack.hasEnchantment(enchantment: Enchantment): Boolean {
-        return getEnchantmentLevel(enchantment, this) > 0
+        return hasEnchantment(enchantment, this)
     }
 
-    infix fun ItemStack.getEnchantmentLevel(enchantment: Enchantment): Int {
-        return getEnchantmentLevel(enchantment, this)
+    infix fun ItemStack.getLevel(enchantment: Enchantment): Int {
+        return getLevel(enchantment, this)
     }
 
     fun hasEnchantment(enchantment: Enchantment, stack: ItemStack): Boolean {
-        return getEnchantmentLevel(enchantment, stack) > 0
+        return getLevel(enchantment, stack) > 0
     }
 
-    fun getEnchantmentLevel(enchantment: Enchantment, stack: ItemStack): Int {
+    fun getLevel(enchantment: Enchantment, stack: ItemStack): Int {
         return stack.getEnchantmentLevel(enchantment)
     }
 }

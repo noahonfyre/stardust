@@ -9,7 +9,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class ResilienceEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
     .category(EnchantmentCategory.ARMOR)
     .applicableSlots(EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET)
 ) {
