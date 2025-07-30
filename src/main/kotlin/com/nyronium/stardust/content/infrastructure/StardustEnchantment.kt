@@ -1,4 +1,4 @@
-package com.nyronium.stardust.content.enchantment.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
 import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.ai.attributes.Attribute

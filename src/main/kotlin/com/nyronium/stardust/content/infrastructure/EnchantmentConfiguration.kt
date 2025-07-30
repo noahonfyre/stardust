@@ -1,4 +1,4 @@
-package com.nyronium.stardust.content.enchantment.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
 import com.nyronium.stardust.core.StardustExtensions
 import net.minecraft.world.entity.EquipmentSlot

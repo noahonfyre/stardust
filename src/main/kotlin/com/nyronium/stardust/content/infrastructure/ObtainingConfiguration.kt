@@ -1,4 +1,4 @@
-package com.nyronium.stardust.content.enchantment.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
 import net.minecraft.world.item.enchantment.Enchantment.Rarity
 

@@ -1,8 +1,8 @@
 package com.nyronium.stardust.content.enchantment.weapon
 
-import com.nyronium.stardust.content.enchantment.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.content.enchantment.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.content.enchantment.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
 import net.minecraft.world.effect.MobEffectInstance
 import net.minecraft.world.effect.MobEffects
 import net.minecraft.world.entity.Entity

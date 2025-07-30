@@ -1,8 +1,8 @@
 package com.nyronium.stardust.content.enchantment
 
-import com.nyronium.stardust.content.enchantment.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.content.enchantment.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.content.enchantment.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
 import com.nyronium.stardust.core.StardustExtensions
 import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
