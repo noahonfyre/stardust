@@ -1,11 +1,10 @@
 package com.nyronium.stardust.content.enchantment.weapon
 
-import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.core.infrastructure.StardustEnchantment
 import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
-import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.event.entity.player.CriticalHitEvent
 import net.minecraftforge.eventbus.api.Event
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
@@ -13,7 +12,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 class StrikingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
     .obtaining(ObtainingConfiguration(Rarity.RARE).default())
-    .category(EnchantmentCategory.WEAPON)
+    .category(StardustUtils.AXE)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
 

@@ -9,6 +9,7 @@ object StardustUtils {
     var TOOLS: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":tools") {
         it is SwordItem || it is PickaxeItem || it is AxeItem || it is ShovelItem || it is HoeItem
     }
+    var AXE: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":axe") { it is AxeItem }
     var EMPTY: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":empty") { false }
     var ALL: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":all") {
         it is SwordItem || it is PickaxeItem || it is AxeItem || it is ShovelItem || it is HoeItem || it is ArmorItem

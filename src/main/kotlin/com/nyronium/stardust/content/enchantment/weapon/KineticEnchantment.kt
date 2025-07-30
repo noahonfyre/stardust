@@ -1,21 +1,21 @@
 package com.nyronium.stardust.content.enchantment.weapon
 
-import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils
 import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.network.chat.Component
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.player.Player
-import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.event.entity.living.LivingHurtEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 import kotlin.math.roundToInt
 
 class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON))
-    .category(EnchantmentCategory.WEAPON)
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .category(StardustUtils.AXE)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
     init {
