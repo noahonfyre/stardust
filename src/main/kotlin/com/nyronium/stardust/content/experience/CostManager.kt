@@ -1,10 +1,10 @@
-package com.nyronium.stardust.core
+package com.nyronium.stardust.content.experience
 
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.EnchantmentMenu
 
 // Some code taken from https://github.com/Tfarcenim/BalancedEnchanting
-object ExperienceCostManager {
+object CostManager {
     val selectedLocal: ThreadLocal<Int> = ThreadLocal.withInitial { 0 }
 
     private fun getRequiredExperienceToNextLevel(level: Int): Int {
