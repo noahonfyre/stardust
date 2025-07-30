@@ -1,10 +1,6 @@
 {
   "tooltip.stardust.extend": "Drücke UMSCHALT",
 
-  "enchantment.stardust.striking": "Ausholen",
-  "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
-  "enchantment.stardust.kinetic": "Sturzflug",
-  "enchantment.stardust.kinetic.desc": "Verteilt mehr Angriffsschaden basierend auf den gefallenen Blöcke",
   "enchantment.stardust.rampage": "Randale",
   "enchantment.stardust.rampage.desc": "Heilt den Spieler nach einem Kill.",
   "enchantment.stardust.frenzy": "Rausch",
@@ -13,6 +9,11 @@
   "enchantment.stardust.decay.desc": "Fügt dem Gegner Wither-Schaden zu.",
   "enchantment.stardust.gaining": "Ausbeute",
   "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag aus Entitäten.",
+
+  "enchantment.stardust.striking": "Ausholen",
+  "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
+  "enchantment.stardust.kinetic": "Sturzflug",
+  "enchantment.stardust.kinetic.desc": "Verteilt mehr Angriffsschaden basierend auf den gefallenen Blöcke",
 
   "enchantment.stardust.wisdom": "Weisheit",
   "enchantment.stardust.wisdom.desc": "Erhöht den Erfahrungsertrag aus Blöcken.",

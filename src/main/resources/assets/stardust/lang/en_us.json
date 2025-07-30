@@ -1,10 +1,6 @@
 {
   "tooltip.stardust.extend": "Press SHIFT",
 
-  "enchantment.stardust.striking": "Striking",
-  "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
-  "enchantment.stardust.kinetic": "Kinetic",
-  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance you have accumulated.",
   "enchantment.stardust.rampage": "Rampage",
   "enchantment.stardust.rampage.desc": "Heals the player after a kill.",
   "enchantment.stardust.frenzy": "Frenzy",
@@ -13,6 +9,11 @@
   "enchantment.stardust.decay.desc": "Inflicts wither on the enemy on hit.",
   "enchantment.stardust.gaining": "Gaining",
   "enchantment.stardust.gaining.desc": "Increases experience yield from entities.",
+
+  "enchantment.stardust.striking": "Striking",
+  "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
+  "enchantment.stardust.kinetic": "Kinetic",
+  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance you have accumulated.",
 
   "enchantment.stardust.wisdom": "Wisdom",
   "enchantment.stardust.wisdom.desc": "Increases experience yield from blocks.",
