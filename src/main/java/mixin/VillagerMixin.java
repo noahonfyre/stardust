@@ -16,12 +16,12 @@ public class VillagerMixin {
     @Inject(method = "updateSpecialPrices", at = @At("HEAD"))
     private void updateSpecialPrices(Player pPlayer, CallbackInfo ci) {
         if(!StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD))) return;
-        int level = StardustUtils.INSTANCE.getLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD));
+        int charismaLevel = StardustUtils.INSTANCE.getLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD));
 
         Villager self = (Villager) (Object) this;
 
         for(MerchantOffer offer : self.getOffers()) {
-            int value = Math.toIntExact(Math.round(Math.floor(((double) offer.getBaseCostA().getCount()) / 8 * level)));
+            int value = Math.toIntExact(Math.round(Math.floor(((double) offer.getBaseCostA().getCount()) / 8 * charismaLevel)));
             offer.setSpecialPriceDiff(-value);
         }
     }
