@@ -1,6 +1,6 @@
 package com.nyronium.stardust
 
-import com.nyronium.stardust.core.StardustRegistry
+import com.nyronium.stardust.core.EnchantmentRegistry
 import net.minecraftforge.fml.common.Mod
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
@@ -15,6 +15,6 @@ object Stardust {
 
     init {
         LOGGER.info("Infusing a touch of stardust...")
-        StardustRegistry.REGISTRY.register(MOD_BUS)
+        EnchantmentRegistry.REGISTRY.register(MOD_BUS)
     }
 }

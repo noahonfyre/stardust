@@ -3,7 +3,6 @@ package com.nyronium.stardust.content.enchantment
 import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.content.infrastructure.StardustEnchantment
-import com.nyronium.stardust.core.StardustExtensions
 import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraftforge.event.entity.player.PlayerEvent
@@ -11,7 +10,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class SoulboundEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .obtaining(ObtainingConfiguration(Rarity.VERY_RARE))
-    .category(StardustExtensions.ALL)
+    .category(StardustUtils.ALL)
     .applicableSlotsAll(EquipmentSlot.entries.toTypedArray())
 ) {
     init {

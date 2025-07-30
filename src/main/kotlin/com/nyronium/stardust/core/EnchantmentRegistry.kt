@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
 import net.minecraftforge.registries.RegistryObject
 
-object StardustRegistry {
+object EnchantmentRegistry {
     val REGISTRY: DeferredRegister<Enchantment> = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, Stardust.ID)
     
     val STRIKING: RegistryObject<Enchantment> = REGISTRY.register("striking") { StrikingEnchantment() }

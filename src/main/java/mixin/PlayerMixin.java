@@ -1,7 +1,7 @@
 package mixin;
 
 import com.nyronium.stardust.content.experience.CostManager;
-import com.nyronium.stardust.core.StardustRegistry;
+import com.nyronium.stardust.core.EnchantmentRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -24,7 +24,7 @@ public abstract class PlayerMixin {
         for(List<ItemStack> list : compartments) {
             for(int i = 0; i < list.size(); ++i) {
                 ItemStack itemstack = list.get(i);
-                if (!itemstack.isEmpty() && !StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getSOULBOUND().get(), itemstack)) {
+                if (!itemstack.isEmpty() && !StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getSOULBOUND().get(), itemstack)) {
                     instance.player.drop(itemstack, true, false);
                     list.set(i, ItemStack.EMPTY);
                 }
@@ -36,8 +36,8 @@ public abstract class PlayerMixin {
     @Redirect(method = "checkMovementStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;causeFoodExhaustion(F)V"))
     private void checkMovementStatistics(Player instance, float pExhaustion) {
         Player self = (Player) (Object) this;
-        if(StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
-            float reducedExhaustion = pExhaustion / (1 + StardustUtils.INSTANCE.getLevel(StardustRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS)));
+        if(StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
+            float reducedExhaustion = pExhaustion / (1 + StardustUtils.INSTANCE.getLevel(EnchantmentRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS)));
             self.causeFoodExhaustion(reducedExhaustion);
         } else {
             self.causeFoodExhaustion(pExhaustion);

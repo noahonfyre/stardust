@@ -1,6 +1,6 @@
 package mixin;
 
-import com.nyronium.stardust.core.StardustRegistry;
+import com.nyronium.stardust.core.EnchantmentRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.npc.Villager;
@@ -15,8 +15,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class VillagerMixin {
     @Inject(method = "updateSpecialPrices", at = @At("HEAD"))
     private void updateSpecialPrices(Player pPlayer, CallbackInfo ci) {
-        if(!StardustUtils.INSTANCE.hasEnchantment(StardustRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD))) return;
-        int charismaLevel = StardustUtils.INSTANCE.getLevel(StardustRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD));
+        if(!StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD))) return;
+        int charismaLevel = StardustUtils.INSTANCE.getLevel(EnchantmentRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD));
 
         Villager self = (Villager) (Object) this;
 
