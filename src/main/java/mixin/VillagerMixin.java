@@ -21,7 +21,7 @@ public class VillagerMixin {
         Villager self = (Villager) (Object) this;
 
         for(MerchantOffer offer : self.getOffers()) {
-            int value = Math.toIntExact(Math.round(Math.floor(((double) offer.getBaseCostA().getCount()) / 8 * charismaLevel)));
+            int value = Math.floorDiv(offer.getBaseCostA().getCount(), 8) * charismaLevel;
             offer.setSpecialPriceDiff(-value);
         }
     }
