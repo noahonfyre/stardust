@@ -1,6 +1,7 @@
 package com.nyronium.stardust.core.infrastructure
 
 import com.nyronium.stardust.core.StardustUtils
+import com.nyronium.stardust.datagen.StardustGlobalLootModifiersProvider
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation
@@ -8,12 +9,23 @@ import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 import java.util.*
+import java.util.Locale.getDefault
 
 open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantment(
     config.obtainingConfiguration.rarity,
     config.category,
     config.applicableSlots
 ) {
+    init {
+        if(config.obtainingConfiguration.lootModifiers.isNotEmpty()) {
+            config.obtainingConfiguration.lootModifiers.forEach { (lootTable, modifierFunction) ->
+                val lootModifier = modifierFunction(this)
+                val modifierName = this::class.simpleName!!.removeSuffix("Enchantment").lowercase(getDefault())+"_from_"+lootTable.removePrefix("chests/")
+                StardustGlobalLootModifiersProvider.modifiersToRegister[modifierName] = lootModifier
+            }
+        }
+    }
+
     override fun isDiscoverable(): Boolean {
         return config.obtainingConfiguration.isDiscoverable
     }

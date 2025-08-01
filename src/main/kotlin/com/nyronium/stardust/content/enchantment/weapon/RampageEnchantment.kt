@@ -1,9 +1,9 @@
 package com.nyronium.stardust.content.enchantment.weapon
 
+import com.nyronium.stardust.core.StardustUtils
 import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.core.infrastructure.StardustEnchantment
-import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -12,7 +12,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class RampageEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).enchantingTable().loot("chests/woodland_mansion", 0.25f))
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
