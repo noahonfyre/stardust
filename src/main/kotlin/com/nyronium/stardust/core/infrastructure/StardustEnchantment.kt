@@ -20,8 +20,8 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
         if(config.obtainingConfiguration.lootModifiers.isNotEmpty()) {
             config.obtainingConfiguration.lootModifiers.forEach { (lootTable, modifierFunction) ->
                 val lootModifier = modifierFunction(this)
-                val modifierName = this::class.simpleName!!.removeSuffix("Enchantment").lowercase(getDefault())+"_from_"+lootTable.removePrefix("chests/")
-                StardustGlobalLootModifiersProvider.modifiersToRegister[modifierName] = lootModifier
+                val modifierSimpleName = this::class.simpleName!!.removeSuffix("Enchantment").lowercase(getDefault())+"_from_"+lootTable.split("/")[lootTable.split("/").size - 1]
+                StardustGlobalLootModifiersProvider.modifiersToRegister[modifierSimpleName] = lootModifier
             }
         }
     }
