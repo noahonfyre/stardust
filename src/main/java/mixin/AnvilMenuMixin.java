@@ -1,6 +1,6 @@
 package mixin;
 
-import com.nyronium.stardust.content.experience.CostManager;
+import com.nyronium.stardust.content.experience.ExperienceManager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AnvilMenu;
 import org.spongepowered.asm.mixin.Mixin;
@@ -23,6 +23,6 @@ public class AnvilMenuMixin {
 
     @Redirect(method = "onTake", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V"))
     private void giveExperienceLevels(Player player, int levels) {
-        player.giveExperiencePoints(-CostManager.INSTANCE.levelToTotalExperience(-levels));
+        player.giveExperiencePoints(-ExperienceManager.INSTANCE.levelToTotalExperience(-levels));
     }
 }

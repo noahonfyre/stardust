@@ -4,7 +4,7 @@ import net.minecraft.world.entity.player.Player
 import net.minecraft.world.inventory.EnchantmentMenu
 
 // Some code taken from https://github.com/Tfarcenim/BalancedEnchanting
-object CostManager {
+object ExperienceManager {
     val selectedLocal: ThreadLocal<Int> = ThreadLocal.withInitial { 0 }
 
     private fun getRequiredExperienceToNextLevel(level: Int): Int {

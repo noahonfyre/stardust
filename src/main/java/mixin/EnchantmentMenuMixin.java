@@ -1,6 +1,6 @@
 package mixin;
 
-import com.nyronium.stardust.content.experience.CostManager;
+import com.nyronium.stardust.content.experience.ExperienceManager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.EnchantmentMenu;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class EnchantmentMenuMixin {
     @Inject(method = "clickMenuButton", at = @At("HEAD"))
     private void clickMenuButton(Player pPlayer, int pId, CallbackInfoReturnable<Boolean> cir) {
-        CostManager.INSTANCE.getSelectedLocal().set(pId);
+        ExperienceManager.INSTANCE.getSelectedLocal().set(pId);
     }
 }
