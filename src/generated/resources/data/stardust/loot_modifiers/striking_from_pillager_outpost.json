@@ -1,0 +1,17 @@
+{
+  "type": "stardust:add_enchanted_book",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/pillager_outpost"
+    },
+    {
+      "chance": 0.5,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "enchantment": "stardust:striking",
+  "item": "minecraft:enchanted_book",
+  "maxLevel": 5,
+  "minLevel": 1
+}

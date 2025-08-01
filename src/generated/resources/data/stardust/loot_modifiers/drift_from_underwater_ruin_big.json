@@ -1,0 +1,17 @@
+{
+  "type": "stardust:add_enchanted_book",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/underwater_ruin_big"
+    },
+    {
+      "chance": 0.75,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "enchantment": "stardust:drift",
+  "item": "minecraft:enchanted_book",
+  "maxLevel": 4,
+  "minLevel": 1
+}

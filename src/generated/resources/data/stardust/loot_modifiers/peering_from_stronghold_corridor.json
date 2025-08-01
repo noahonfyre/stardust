@@ -1,0 +1,17 @@
+{
+  "type": "stardust:add_enchanted_book",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/stronghold_corridor"
+    },
+    {
+      "chance": 0.33,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "enchantment": "stardust:peering",
+  "item": "minecraft:enchanted_book",
+  "maxLevel": 1,
+  "minLevel": 1
+}

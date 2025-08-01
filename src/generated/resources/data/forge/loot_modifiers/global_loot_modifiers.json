@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "stardust:drift_from_underwater_ruin_big",
+    "stardust:rampage_from_woodland_mansion",
+    "stardust:peering_from_stronghold_corridor",
+    "stardust:remedy_from_stronghold_corridor",
+    "stardust:drift_from_shipwreck_treasure",
+    "stardust:striking_from_pillager_outpost",
+    "stardust:peering_from_nether_bridge"
+  ],
+  "replace": false
+}
