@@ -1,10 +1,10 @@
 package com.nyronium.stardust.content.enchantment.breakable
 
+import com.nyronium.stardust.core.EnchantmentRegistry
+import com.nyronium.stardust.core.StardustUtils
 import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.core.infrastructure.StardustEnchantment
-import com.nyronium.stardust.core.EnchantmentRegistry
-import com.nyronium.stardust.core.StardustUtils
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory

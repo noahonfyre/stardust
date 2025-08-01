@@ -11,7 +11,7 @@ import net.minecraftforge.common.ForgeMod
 
 class DriftEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default().notTradable().loot("chests/underwater_ruin_big", 0.75f).loot("chests/shipwreck_treasure", 0.5f))
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).discoverable().enchantingTable().loot("chests/underwater_ruin_big", 0.9f).loot("chests/shipwreck_treasure", 0.5f))
     .category(EnchantmentCategory.ARMOR_LEGS)
     .applicableSlots(EquipmentSlot.LEGS)
     .incompatible(Enchantments.SWIFT_SNEAK)

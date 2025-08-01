@@ -3,15 +3,15 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:chests/underwater_ruin_big"
+      "loot_table_id": "minecraft:chests/pillager_outpost"
     },
     {
-      "chance": 0.9,
+      "chance": 0.66,
       "condition": "minecraft:random_chance"
     }
   ],
-  "enchantment": "stardust:drift",
+  "enchantment": "stardust:charisma",
   "item": "minecraft:enchanted_book",
-  "maxLevel": 4,
+  "maxLevel": 3,
   "minLevel": 1
 }
