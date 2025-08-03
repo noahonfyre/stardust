@@ -1,10 +1,10 @@
 package com.nyronium.stardust.content.enchantment.weapon
 
+import com.nyronium.stardust.core.StardustUtils
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.core.infrastructure.StardustEnchantment
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.network.chat.Component
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.player.Player
@@ -34,7 +34,7 @@ class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val kineticEnergy = attacker.fallDistance.roundToInt()
         if(kineticEnergy <= 5) return
 
-        event.amount *= 1+(kineticEnergy/15).coerceAtMost(1)*(kineticLevel/maxLevel)
+        event.amount *= (kineticEnergy/15f).coerceIn(1f, 5f)*(kineticLevel/maxLevel)
         attacker.resetFallDistance()
 
         attacker.sendSystemMessage(Component.literal(((kineticEnergy/20).coerceAtMost(1)*(kineticLevel/maxLevel)).toString()))
