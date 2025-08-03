@@ -16,12 +16,12 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Frenzy (III) increases the weapon's attack speed.
 - Decay (II) inflicts wither on the enemy on hit.
 - Gaining (V) increases experience yield from entities.
-### Axe Enchantments
-- Striking (V) makes critical hits deal up to twice as much damage as normal.
-- Kinetic (V) deals more damage the more fall distance you have accumulated.
 ### Tool Enchantments
 - Wisdom (V) increases experience yield from blocks.
 - Reaching (III) increases the reach distance of the tool.
+### Axe Enchantments
+- Striking (V) makes critical hits deal up to twice as much damage as normal.
+- Kinetic (V) deals more damage the more fall distance is accumulated.
 ### Armor Enchantments
 - Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
