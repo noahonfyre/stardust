@@ -14,7 +14,7 @@ class ReachingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
     init {
-        registerAttributeModifier(ForgeMod.ENTITY_REACH.get()) { level -> 1.0*level }
-        registerAttributeModifier(ForgeMod.BLOCK_REACH.get()) { level -> 1.0*level }
+        registerAttributeModifier(ForgeMod.ENTITY_REACH.get()) { level -> 0.5*level }
+        registerAttributeModifier(ForgeMod.BLOCK_REACH.get()) { level -> 0.5*level }
     }
 }
