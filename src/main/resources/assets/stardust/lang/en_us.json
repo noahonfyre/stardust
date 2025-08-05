@@ -13,17 +13,17 @@
   "enchantment.stardust.striking": "Striking",
   "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
   "enchantment.stardust.kinetic": "Kinetic",
-  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance you have accumulated.",
+  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance is accumulated.",
 
   "enchantment.stardust.wisdom": "Wisdom",
   "enchantment.stardust.wisdom.desc": "Increases experience yield from blocks.",
   "enchantment.stardust.reaching": "Reaching",
   "enchantment.stardust.reaching.desc": "Increases the reach distance of the tool.",
 
-  "enchantment.stardust.resilience": "Resilience",
-  "enchantment.stardust.resilience.desc": "Increases armor toughness.",
   "enchantment.stardust.sheltering": "Sheltering",
   "enchantment.stardust.sheltering.desc": "Increases armor points.",
+  "enchantment.stardust.resilience": "Resilience",
+  "enchantment.stardust.resilience.desc": "Increases armor toughness.",
 
   "enchantment.stardust.stealthiness": "Stealthiness",
   "enchantment.stardust.stealthiness.desc": "Hides the player's nametag.",

@@ -26,8 +26,8 @@ object EnchantmentRegistry {
     val WISDOM: RegistryObject<Enchantment> = REGISTRY.register("wisdom") { WisdomEnchantment() }
     val REACHING: RegistryObject<Enchantment> = REGISTRY.register("reaching") { ReachingEnchantment() }
 
-    val RESILIENCE: RegistryObject<Enchantment> = REGISTRY.register("resilience") { ResilienceEnchantment() }
     val SHELTERING: RegistryObject<Enchantment> = REGISTRY.register("sheltering") { ShelteringEnchantment() }
+    val RESILIENCE: RegistryObject<Enchantment> = REGISTRY.register("resilience") { ResilienceEnchantment() }
 
     val STEALTHINESS: RegistryObject<Enchantment> = REGISTRY.register("stealthiness") { StealthinessEnchantment() }
     val CONSUMPTION: RegistryObject<Enchantment> = REGISTRY.register("consumption") { ConsumptionEnchantment() }

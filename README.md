@@ -23,8 +23,8 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Striking (V) makes critical hits deal up to twice as much damage as normal.
 - Kinetic (V) deals more damage the more fall distance is accumulated.
 ### Armor Enchantments
-- Resilience (IV) increases armor toughness.
 - Sheltering (IV) increases armor points.
+- Resilience (IV) increases armor toughness.
 ### Helmet Enchantments
 - Stealthiness (III) hides the player's nametag.
 - Consumption (V) increases eating and drinking speed.
