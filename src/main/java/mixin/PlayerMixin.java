@@ -19,7 +19,7 @@ public abstract class PlayerMixin {
 
     // SOULBOUND
     @Redirect(method = "dropEquipment", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Inventory;dropAll()V"))
-    private void dropEquipment(Inventory instance) {
+    private void dropAll(Inventory instance) {
         List<NonNullList<ItemStack>> compartments = ((InventoryAccessor) instance).getCompartments();
         for(List<ItemStack> list : compartments) {
             for(int i = 0; i < list.size(); ++i) {
@@ -34,7 +34,7 @@ public abstract class PlayerMixin {
 
     // ENDURANCE
     @Redirect(method = "checkMovementStatistics", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;causeFoodExhaustion(F)V"))
-    private void checkMovementStatistics(Player instance, float pExhaustion) {
+    private void causeFoodExhaustion(Player instance, float pExhaustion) {
         Player self = (Player) (Object) this;
         if(StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS))) {
             float reducedExhaustion = pExhaustion / (1 + StardustUtils.INSTANCE.getLevel(EnchantmentRegistry.INSTANCE.getENDURANCE().get(), instance.getItemBySlot(EquipmentSlot.LEGS)));
@@ -45,7 +45,7 @@ public abstract class PlayerMixin {
     }
 
     @Redirect(method = "onEnchantmentPerformed", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/player/Player;giveExperienceLevels(I)V"))
-    private void onEnchantmentPerformed(Player instance, int levels) {
+    private void giveExperienceLevels(Player instance, int levels) {
         ExperienceManager.INSTANCE.handleEnchantXp(instance, levels);
     }
 }
