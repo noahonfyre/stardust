@@ -4,6 +4,7 @@ import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.core.infrastructure.StardustEnchantment
 import net.minecraft.world.entity.EquipmentSlot
+import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.Attributes
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
@@ -14,6 +15,6 @@ class PacingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .applicableSlots(EquipmentSlot.FEET)
 ) {
     init {
-        registerAttributeModifier(Attributes.MOVEMENT_SPEED) { level -> 0.01*level }
+        registerAttributeModifier(Attributes.MOVEMENT_SPEED, AttributeModifier.Operation.MULTIPLY_BASE) { level -> 0.1*level }
     }
 }
