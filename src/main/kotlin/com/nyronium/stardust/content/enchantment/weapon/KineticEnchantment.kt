@@ -34,7 +34,7 @@ class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val kineticEnergy = attacker.fallDistance.roundToInt()
         if(kineticEnergy <= 5) return
 
-        event.amount *= (kineticEnergy/15f).coerceIn(1f, 5f)*(kineticLevel/maxLevel)
+        event.amount *= 1+(kineticEnergy/15f).coerceAtMost(4f)*(kineticLevel/maxLevel)
         attacker.resetFallDistance()
 
         attacker.sendSystemMessage(Component.literal(((kineticEnergy/20).coerceAtMost(1)*(kineticLevel/maxLevel)).toString()))
