@@ -6,13 +6,13 @@
   "enchantment.stardust.frenzy": "Rausch",
   "enchantment.stardust.frenzy.desc": "Erhöht die Angriffsgeschwindigkeit.",
   "enchantment.stardust.decay": "Dürre",
-  "enchantment.stardust.decay.desc": "Fügt dem Gegner Wither-Schaden zu.",
+  "enchantment.stardust.decay.desc": "Fügt dem Gegner zusätzlichen Wither-Schaden zu.",
   "enchantment.stardust.gaining": "Ausbeute",
-  "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag aus Entitäten.",
+  "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag von Entitäten.",
 
   "enchantment.stardust.striking": "Ausholen",
   "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
-  "enchantment.stardust.kinetic": "Sturzflug",
+  "enchantment.stardust.kinetic": "Wucht",
   "enchantment.stardust.kinetic.desc": "Verteilt mehr Angriffsschaden basierend auf der angesammelten Falldistanz",
 
   "enchantment.stardust.wisdom": "Weisheit",
@@ -20,29 +20,29 @@
   "enchantment.stardust.reaching": "Reichweite",
   "enchantment.stardust.reaching.desc": "Erhöht die Reichweite des Werkzeuges.",
 
-  "enchantment.stardust.sheltering": "Barrikade",
+  "enchantment.stardust.sheltering": "Schonung",
   "enchantment.stardust.sheltering.desc": "Erhöht die Rüstungspunkte der Rüstung.",
   "enchantment.stardust.resilience": "Belastbarkeit",
   "enchantment.stardust.resilience.desc": "Erhöht die Rüstungshärte der Rüstung.",
 
-  "enchantment.stardust.stealthiness": "Heimlichkeit",
+  "enchantment.stardust.stealthiness": "Schleier",
   "enchantment.stardust.stealthiness.desc": "Versteckt das Namensschild des Spielers.",
   "enchantment.stardust.consumption": "Verschlingen",
   "enchantment.stardust.consumption.desc": "Erhöht die Essens- und Trinkgeschwindigkeit.",
   "enchantment.stardust.charisma": "Charisma",
-  "enchantment.stardust.charisma.desc": "Erhöht die Grenze der Sperre der Handelsangebote.",
-  "enchantment.stardust.peering": "Späherei",
-  "enchantment.stardust.peering.desc": "Entfernt die Aggression von Endermen und Piglins.",
+  "enchantment.stardust.charisma.desc": "Lässt die Preise der Dorfbewohner sinken.",
+  "enchantment.stardust.peering": "Spähen",
+  "enchantment.stardust.peering.desc": "Beschwichtigt Endermen und Piglins.",
 
-  "enchantment.stardust.remedy": "Auffrischung",
-  "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch Erfahrungspunkte wieder her.",
+  "enchantment.stardust.remedy": "Aufstockung",
+  "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch eingehende Erfahrung wieder her.",
   "enchantment.stardust.nullification": "Annullierung",
-  "enchantment.stardust.nullification.desc": "Kann zu einer kleinen Wahrscheinlichkeit eingehenden Schaden annullieren.",
+  "enchantment.stardust.nullification.desc": "Kann zu einer geringen Wahrscheinlichkeit eingehenden Schaden annullieren.",
 
-  "enchantment.stardust.endurance": "Aushaltevermögen",
-  "enchantment.stardust.endurance.desc": "Reduziert Erschöpfung durch körperliche Aktivitäten.",
-  "enchantment.stardust.drift": "Dynamisch",
-  "enchantment.stardust.drift.desc": "Erhöht die Geschwindigkeit während des Schwimmens.",
+  "enchantment.stardust.endurance": "Ausdauer",
+  "enchantment.stardust.endurance.desc": "Reduziert Hunger durch körperliche Aktivitäten.",
+  "enchantment.stardust.drift": "Treiben",
+  "enchantment.stardust.drift.desc": "Erhöht die Schwimmgeschwindigkeit.",
   "enchantment.stardust.determination": "Entschlossenheit",
   "enchantment.stardust.determination.desc": "Heilt den Spieler schneller, während er schleicht.",
   "enchantment.stardust.stability": "Beständigkeit",
@@ -56,6 +56,6 @@
   "enchantment.stardust.tenacity": "Zuverlässigkeit",
   "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar.",
 
-  "enchantment.stardust.soulbound": "Bewahrung",
-  "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand im Inventar nach dem Tod."
+  "enchantment.stardust.soulbound": "Erhaltung",
+  "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand nach dem Tod im Inventar."
 }
