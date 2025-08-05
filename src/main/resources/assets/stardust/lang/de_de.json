@@ -10,15 +10,15 @@
   "enchantment.stardust.gaining": "Ausbeute",
   "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag von Entitäten.",
 
-  "enchantment.stardust.striking": "Ausholen",
-  "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
-  "enchantment.stardust.kinetic": "Wucht",
-  "enchantment.stardust.kinetic.desc": "Verteilt mehr Angriffsschaden basierend auf der angesammelten Falldistanz",
-
   "enchantment.stardust.wisdom": "Weisheit",
   "enchantment.stardust.wisdom.desc": "Erhöht den Erfahrungsertrag aus Blöcken.",
   "enchantment.stardust.reaching": "Reichweite",
   "enchantment.stardust.reaching.desc": "Erhöht die Reichweite des Werkzeuges.",
+
+  "enchantment.stardust.striking": "Ausholen",
+  "enchantment.stardust.striking.desc": "Kritische Treffer verursachen bis zu doppelten Schaden.",
+  "enchantment.stardust.kinetic": "Wucht",
+  "enchantment.stardust.kinetic.desc": "Verteilt mehr Angriffsschaden basierend auf der angesammelten Falldistanz",
 
   "enchantment.stardust.sheltering": "Schonung",
   "enchantment.stardust.sheltering.desc": "Erhöht die Rüstungspunkte der Rüstung.",

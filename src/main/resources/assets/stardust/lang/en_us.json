@@ -10,15 +10,15 @@
   "enchantment.stardust.gaining": "Gaining",
   "enchantment.stardust.gaining.desc": "Increases experience yield from entities.",
 
-  "enchantment.stardust.striking": "Striking",
-  "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
-  "enchantment.stardust.kinetic": "Kinetic",
-  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance is accumulated.",
-
   "enchantment.stardust.wisdom": "Wisdom",
   "enchantment.stardust.wisdom.desc": "Increases experience yield from blocks.",
   "enchantment.stardust.reaching": "Reaching",
   "enchantment.stardust.reaching.desc": "Increases the reach distance of the tool.",
+
+  "enchantment.stardust.striking": "Striking",
+  "enchantment.stardust.striking.desc": "Makes critical hits deal up to twice as much damage as normal.",
+  "enchantment.stardust.kinetic": "Kinetic",
+  "enchantment.stardust.kinetic.desc": "Deals more damage the more fall distance is accumulated.",
 
   "enchantment.stardust.sheltering": "Sheltering",
   "enchantment.stardust.sheltering.desc": "Increases armor points.",
@@ -30,7 +30,7 @@
   "enchantment.stardust.consumption": "Consumption",
   "enchantment.stardust.consumption.desc": "Increases eating and drinking speed.",
   "enchantment.stardust.charisma": "Charisma",
-  "enchantment.stardust.charisma.desc": "Increases the limit of trade exhaustion.",
+  "enchantment.stardust.charisma.desc": "Obtains special prices from villagers.",
   "enchantment.stardust.peering": "Peering",
   "enchantment.stardust.peering.desc": "Removes enderman and piglin aggression.",
 
