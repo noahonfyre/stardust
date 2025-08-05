@@ -11,8 +11,18 @@ object StardustUtils {
     }
     var AXE: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":axe") { it is AxeItem }
     var EMPTY: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":empty") { false }
-    var ALL: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":all") {
-        it is SwordItem || it is PickaxeItem || it is AxeItem || it is ShovelItem || it is HoeItem || it is ArmorItem
+    var PRIMARY_ITEMS: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":primary_items") {
+        it is SwordItem ||
+                it is PickaxeItem ||
+                it is AxeItem ||
+                it is ShovelItem ||
+                it is HoeItem ||
+                it is ArmorItem ||
+                it is ElytraItem ||
+                it is TridentItem ||
+                it is ShieldItem ||
+                it is BowItem ||
+                it is CrossbowItem
     }
 
     infix fun ItemStack.hasEnchantment(enchantment: Enchantment): Boolean {
