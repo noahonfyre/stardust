@@ -8,7 +8,6 @@ import net.minecraft.world.effect.MobEffects
 import net.minecraft.world.entity.Entity
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.LivingEntity
-import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraft.world.item.enchantment.Enchantments
 
@@ -22,10 +21,10 @@ class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
 
     override fun doPostAttack(pAttacker: LivingEntity, pTarget: Entity, pLevel: Int) {
         if(pAttacker.level().isClientSide) return
-        if(pTarget !is Player) return
+        if(pTarget !is LivingEntity) return
 
         val random = (0..100).random()
-        if(random <= 2.5*pLevel) {
+        if(random <= 7.5*pLevel) {
             pTarget.addEffect(MobEffectInstance(MobEffects.WITHER, 60, pLevel-1))
         }
     }
