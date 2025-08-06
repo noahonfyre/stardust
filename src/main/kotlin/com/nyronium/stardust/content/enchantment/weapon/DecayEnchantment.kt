@@ -13,7 +13,7 @@ import net.minecraft.world.item.enchantment.Enchantments
 
 class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
     .incompatible(Enchantments.FIRE_ASPECT)
@@ -23,9 +23,6 @@ class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(pAttacker.level().isClientSide) return
         if(pTarget !is LivingEntity) return
 
-        val random = (0..100).random()
-        if(random <= 7.5*pLevel) {
-            pTarget.addEffect(MobEffectInstance(MobEffects.WITHER, 60, pLevel-1))
-        }
+        pTarget.addEffect(MobEffectInstance(MobEffects.WITHER, 20*pLevel, 0))
     }
 }
