@@ -56,6 +56,8 @@
   "enchantment.stardust.tenacity": "Zuverlässigkeit",
   "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar.",
 
-  "enchantment.stardust.soulbound": "Erhaltung",
+  "enchantment.stardust.retention": "Erhaltung",
+  "enchantment.stardust.retention.desc": "Hindert den Gegenstand vor dem Fallen in die Leere und vor Zerstörung.",
+  "enchantment.stardust.soulbound": "Gebundenheit",
   "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand nach dem Tod im Inventar."
 }

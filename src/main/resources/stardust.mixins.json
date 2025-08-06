@@ -10,6 +10,8 @@
     "EnchantmentMenuMixin",
     "EnchantmentMixin",
     "InventoryAccessor",
+    "ItemEntityAccessor",
+    "ItemEntityMixin",
     "PiglinAiMixin",
     "PlayerMixin",
     "VillagerMixin"

@@ -44,6 +44,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Reparation repairs the item over time when mending is also present.
 - Tenacity makes the item truly unbreakable.
 ### Other Enchantments
+- Retention prevents the item from falling into the void or being destroyed.
 - Soulbound keeps the item in the inventory after death.
 
 ---

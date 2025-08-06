@@ -56,6 +56,8 @@
   "enchantment.stardust.tenacity": "Tenacity",
   "enchantment.stardust.tenacity.desc": "Makes the item truly unbreakable.",
 
+  "enchantment.stardust.retention": "Retention",
+  "enchantment.stardust.retention.desc": "Prevents the item from falling into the void or being destroyed.",
   "enchantment.stardust.soulbound": "Soulbound",
   "enchantment.stardust.soulbound.desc": "Keeps the item in the inventory after death."
 }
