@@ -14,6 +14,6 @@ class StabilityEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .applicableSlots(EquipmentSlot.LEGS)
 ) {
     init {
-        registerAttributeModifier(Attributes.KNOCKBACK_RESISTANCE) { level -> 0.15*(level/this.maxLevel) }
+        registerAttributeModifier(Attributes.KNOCKBACK_RESISTANCE) { level -> 0.1*(level/this.maxLevel) }
     }
 }
