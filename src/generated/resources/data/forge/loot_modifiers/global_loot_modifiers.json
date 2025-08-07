@@ -7,7 +7,9 @@
     "stardust:peering_from_stronghold_corridor",
     "stardust:remedy_from_stronghold_corridor",
     "stardust:drift_from_shipwreck_treasure",
+    "stardust:kinetic_from_end_city_treasure",
     "stardust:charisma_from_pillager_outpost",
+    "stardust:determination_from_end_city_treasure",
     "stardust:striking_from_pillager_outpost",
     "stardust:peering_from_nether_bridge"
   ],
