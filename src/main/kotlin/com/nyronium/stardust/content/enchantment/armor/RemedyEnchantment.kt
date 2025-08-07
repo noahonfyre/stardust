@@ -25,7 +25,7 @@ class RemedyEnchantment : StardustEnchantment(EnchantmentConfiguration()
 
         if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.CHEST))) return
 
-        if(player.foodData.foodLevel < 20) {
+        if(player.foodData.needsFood()) {
             player.foodData.eat(1, event.orb.value/10f)
         } else if(player.health < player.maxHealth) {
             player.heal(event.orb.value/10f)
