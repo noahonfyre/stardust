@@ -16,9 +16,7 @@ import net.minecraftforge.registries.RegistryObject
 
 object EnchantmentRegistry {
     val REGISTRY: DeferredRegister<Enchantment> = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, Stardust.ID)
-    
-    val STRIKING: RegistryObject<Enchantment> = REGISTRY.register("striking") { StrikingEnchantment() }
-    val KINETIC: RegistryObject<Enchantment> = REGISTRY.register("kinetic") { KineticEnchantment() }
+
     val RAMPAGE: RegistryObject<Enchantment> = REGISTRY.register("rampage") { RampageEnchantment() }
     val FRENZY: RegistryObject<Enchantment> = REGISTRY.register("frenzy") { FrenzyEnchantment() }
     val DECAY: RegistryObject<Enchantment> = REGISTRY.register("decay") { DecayEnchantment() }
@@ -26,6 +24,9 @@ object EnchantmentRegistry {
 
     val WISDOM: RegistryObject<Enchantment> = REGISTRY.register("wisdom") { WisdomEnchantment() }
     val REACHING: RegistryObject<Enchantment> = REGISTRY.register("reaching") { ReachingEnchantment() }
+
+    val STRIKING: RegistryObject<Enchantment> = REGISTRY.register("striking") { StrikingEnchantment() }
+    val KINETIC: RegistryObject<Enchantment> = REGISTRY.register("kinetic") { KineticEnchantment() }
 
     val SHELTERING: RegistryObject<Enchantment> = REGISTRY.register("sheltering") { ShelteringEnchantment() }
     val RESILIENCE: RegistryObject<Enchantment> = REGISTRY.register("resilience") { ResilienceEnchantment() }
