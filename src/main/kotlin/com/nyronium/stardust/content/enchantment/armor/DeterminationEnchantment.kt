@@ -13,7 +13,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class DeterminationEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).enchantingTable().discoverable())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).enchantingTable().discoverable().loot("chests/end_city_treasure", 0.05f))
     .category(EnchantmentCategory.ARMOR_LEGS)
     .applicableSlots(EquipmentSlot.LEGS)
     .incompatible(Enchantments.SWIFT_SNEAK)
