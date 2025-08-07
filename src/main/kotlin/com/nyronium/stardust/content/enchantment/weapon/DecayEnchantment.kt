@@ -23,6 +23,6 @@ class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(pAttacker.level().isClientSide) return
         if(pTarget !is LivingEntity) return
 
-        pTarget.addEffect(MobEffectInstance(MobEffects.WITHER, 20*pLevel, 0))
+        pTarget.addEffect(MobEffectInstance(MobEffects.WITHER, 30*pLevel, 0))
     }
 }
