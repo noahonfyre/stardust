@@ -1,7 +1,7 @@
 package mixin;
 
 import com.nyronium.stardust.content.experience.ExperienceManager;
-import com.nyronium.stardust.core.EnchantmentRegistry;
+import com.nyronium.stardust.core.registry.EnchantmentRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.entity.EquipmentSlot;

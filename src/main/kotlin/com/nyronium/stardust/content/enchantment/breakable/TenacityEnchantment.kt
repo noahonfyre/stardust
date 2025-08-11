@@ -1,10 +1,10 @@
 package com.nyronium.stardust.content.enchantment.breakable
 
-import com.nyronium.stardust.core.EnchantmentRegistry
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
+import com.nyronium.stardust.core.registry.EnchantmentRegistry
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -31,7 +31,7 @@ class TenacityEnchantment : StardustEnchantment(EnchantmentConfiguration()
             if(stack.tag == null) continue
             val compoundTag = stack.tag!!
 
-            if(!StardustUtils.hasEnchantment(this, stack)) {
+            if(!stack.hasEnchantment(this)) {
                 if(!compoundTag.getBoolean("TenacityApplied")) continue
                 compoundTag.putBoolean("TenacityApplied", false)
                 compoundTag.putBoolean("Unbreakable", false)

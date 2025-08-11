@@ -32,7 +32,7 @@
   "enchantment.stardust.charisma": "Charisma",
   "enchantment.stardust.charisma.desc": "Lässt die Preise der Dorfbewohner sinken.",
   "enchantment.stardust.peering": "Spähen",
-  "enchantment.stardust.peering.desc": "Beschwichtigt Endermen und Piglins.",
+  "enchantment.stardust.peering.desc": "Beschwichtigt Endermen und Piglin.",
 
   "enchantment.stardust.remedy": "Aufstockung",
   "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch eingehende Erfahrung wieder her.",
@@ -50,6 +50,11 @@
 
   "enchantment.stardust.pacing": "Schneller Schritt",
   "enchantment.stardust.pacing.desc": "Gewährt schnellere Schrittgeschwindigkeit.",
+
+  "enchantment.stardust.lift": "Auftrieb",
+  "enchantment.stardust.lift.desc": "Fördert den Auftrieb des Spielers während des Fliegens.",
+  "enchantment.stardust.thrusting": "Schub",
+  "enchantment.stardust.thrusting.desc": "Treibt den Spieler während des Fliegens leicht an.",
 
   "enchantment.stardust.reparation": "Ausbesserung",
   "enchantment.stardust.reparation.desc": "Repariert das Werkzeug über die Zeit, wenn es ebenfalls mit Reparatur verzaubert ist.",

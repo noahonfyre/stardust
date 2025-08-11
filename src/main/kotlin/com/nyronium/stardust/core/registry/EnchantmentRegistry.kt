@@ -1,14 +1,33 @@
-package com.nyronium.stardust.core
+package com.nyronium.stardust.core.registry
 
 import com.nyronium.stardust.Stardust
 import com.nyronium.stardust.content.enchantment.RetentionEnchantment
 import com.nyronium.stardust.content.enchantment.SoulboundEnchantment
-import com.nyronium.stardust.content.enchantment.armor.*
+import com.nyronium.stardust.content.enchantment.armor.ResilienceEnchantment
+import com.nyronium.stardust.content.enchantment.armor.ShelteringEnchantment
+import com.nyronium.stardust.content.enchantment.armor.boots.PacingEnchantment
+import com.nyronium.stardust.content.enchantment.armor.chestplate.NullificationEnchantment
+import com.nyronium.stardust.content.enchantment.armor.chestplate.RemedyEnchantment
+import com.nyronium.stardust.content.enchantment.armor.helmet.CharismaEnchantment
+import com.nyronium.stardust.content.enchantment.armor.helmet.ConsumptionEnchantment
+import com.nyronium.stardust.content.enchantment.armor.helmet.PeeringEnchantment
+import com.nyronium.stardust.content.enchantment.armor.helmet.StealthinessEnchantment
+import com.nyronium.stardust.content.enchantment.armor.leggings.DeterminationEnchantment
+import com.nyronium.stardust.content.enchantment.armor.leggings.DriftEnchantment
+import com.nyronium.stardust.content.enchantment.armor.leggings.EnduranceEnchantment
+import com.nyronium.stardust.content.enchantment.armor.leggings.StabilityEnchantment
 import com.nyronium.stardust.content.enchantment.breakable.ReparationEnchantment
 import com.nyronium.stardust.content.enchantment.breakable.TenacityEnchantment
+import com.nyronium.stardust.content.enchantment.elytra.LiftEnchantment
+import com.nyronium.stardust.content.enchantment.elytra.ThrustingEnchantment
 import com.nyronium.stardust.content.enchantment.tool.ReachingEnchantment
-import com.nyronium.stardust.content.enchantment.tool.WisdomEnchantment
-import com.nyronium.stardust.content.enchantment.weapon.*
+import com.nyronium.stardust.content.enchantment.tool.pickaxe.WisdomEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.RampageEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.axe.KineticEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.axe.StrikingEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.DecayEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.FrenzyEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.GainingEnchantment
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
@@ -45,6 +64,9 @@ object EnchantmentRegistry {
     val STABILITY: RegistryObject<Enchantment> = REGISTRY.register("stability") { StabilityEnchantment() }
 
     val PACING: RegistryObject<Enchantment> = REGISTRY.register("pacing") { PacingEnchantment() }
+
+    val LIFT: RegistryObject<Enchantment> = REGISTRY.register("lift") { LiftEnchantment() }
+    val THRUSTING: RegistryObject<Enchantment> = REGISTRY.register("thrusting") { ThrustingEnchantment() }
 
     val REPARATION: RegistryObject<Enchantment> = REGISTRY.register("reparation") { ReparationEnchantment() }
     val TENACITY: RegistryObject<Enchantment> = REGISTRY.register("tenacity") { TenacityEnchantment() }

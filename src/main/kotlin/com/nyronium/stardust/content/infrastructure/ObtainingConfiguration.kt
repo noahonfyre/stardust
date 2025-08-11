@@ -1,4 +1,4 @@
-package com.nyronium.stardust.core.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
 import com.nyronium.stardust.content.loot.EnchantedBookLootModifier
 import net.minecraft.resources.ResourceLocation

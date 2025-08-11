@@ -1,10 +1,10 @@
 package com.nyronium.stardust.content.enchantment.breakable
 
-import com.nyronium.stardust.core.EnchantmentRegistry
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
+import com.nyronium.stardust.core.registry.EnchantmentRegistry
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -29,8 +29,8 @@ class ReparationEnchantment : StardustEnchantment(EnchantmentConfiguration()
         val player = event.player
         if(player.tickCount % 20 != 0) return
         val filtered = EquipmentSlot.entries.toTypedArray().filter {
-            StardustUtils.hasEnchantment(this, player.getItemBySlot(it)) &&
-                    StardustUtils.hasEnchantment(Enchantments.MENDING, player.getItemBySlot(it))
+            player.getItemBySlot(it).hasEnchantment(this) &&
+                    player.getItemBySlot(it).hasEnchantment(Enchantments.MENDING)
         }
         if(filtered.isEmpty()) return
         val first = filtered.firstOrNull { player.getItemBySlot(it).damageValue < player.getItemBySlot(it).maxDamage } ?: return

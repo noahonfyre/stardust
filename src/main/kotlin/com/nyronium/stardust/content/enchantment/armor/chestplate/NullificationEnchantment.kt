@@ -1,9 +1,10 @@
-package com.nyronium.stardust.content.enchantment.armor
+package com.nyronium.stardust.content.enchantment.armor.chestplate
 
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils.getLevel
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -26,8 +27,8 @@ class NullificationEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(event.entity !is Player) return
         val player = event.entity as Player
 
-        if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.CHEST))) return
-        val nullificationLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.CHEST))
+        if(!player.getItemBySlot(EquipmentSlot.CHEST).hasEnchantment(this)) return
+        val nullificationLevel = player.getItemBySlot(EquipmentSlot.CHEST).getLevel(this)
 
         val random = (0..100).random()
         if(random <= nullificationLevel) {

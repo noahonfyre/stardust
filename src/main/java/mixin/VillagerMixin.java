@@ -1,6 +1,6 @@
 package mixin;
 
-import com.nyronium.stardust.core.EnchantmentRegistry;
+import com.nyronium.stardust.core.registry.EnchantmentRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.npc.Villager;

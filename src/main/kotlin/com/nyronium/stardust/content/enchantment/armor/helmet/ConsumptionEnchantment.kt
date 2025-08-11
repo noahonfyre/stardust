@@ -1,9 +1,10 @@
-package com.nyronium.stardust.content.enchantment.armor
+package com.nyronium.stardust.content.enchantment.armor.helmet
 
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils.getLevel
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.UseAnim
@@ -26,8 +27,8 @@ class ConsumptionEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(event.entity !is Player) return
         val player = event.entity as Player
 
-        if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.HEAD))) return
-        val consumptionLevel = StardustUtils.getLevel(this, player.getItemBySlot(EquipmentSlot.HEAD))
+        if(!player.getItemBySlot(EquipmentSlot.HEAD).hasEnchantment(this)) return
+        val consumptionLevel = player.getItemBySlot(EquipmentSlot.HEAD).getLevel(this)
         if(event.item.useAnimation != UseAnim.EAT && event.item.useAnimation != UseAnim.DRINK) return
         event.duration /= 1+consumptionLevel/this.maxLevel
     }

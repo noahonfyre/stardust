@@ -1,6 +1,6 @@
-package com.nyronium.stardust.core.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
-import com.nyronium.stardust.core.StardustUtils
+import com.nyronium.stardust.core.StardustCategories
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.Enchantment.Rarity
@@ -8,7 +8,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class EnchantmentConfiguration {
     var maxLevel: Int = 1
-    var category: EnchantmentCategory = StardustUtils.EMPTY
+    var category: EnchantmentCategory = StardustCategories.NONE
     var applicableSlots: Array<EquipmentSlot> = arrayOf()
     var obtainingConfiguration: ObtainingConfiguration = ObtainingConfiguration(Rarity.COMMON).default()
     var incompatibleEnchantments: MutableList<Enchantment> = mutableListOf()

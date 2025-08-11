@@ -51,6 +51,11 @@
   "enchantment.stardust.pacing": "Pacing",
   "enchantment.stardust.pacing.desc": "Grants increased movement speed.",
 
+  "enchantment.stardust.lift": "Lift",
+  "enchantment.stardust.lift.desc": "Increases lift while elytra flying.",
+  "enchantment.stardust.thrusting": "Thrusting",
+  "enchantment.stardust.thrusting.desc": "Boosts the player slightly while elytra flying.",
+
   "enchantment.stardust.reparation": "Reparation",
   "enchantment.stardust.reparation.desc": "Repairs the item over time when mending is also present.",
   "enchantment.stardust.tenacity": "Tenacity",

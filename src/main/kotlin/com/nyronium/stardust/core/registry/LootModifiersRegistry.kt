@@ -1,4 +1,4 @@
-package com.nyronium.stardust.core
+package com.nyronium.stardust.core.registry
 
 import com.mojang.serialization.Codec
 import com.nyronium.stardust.Stardust

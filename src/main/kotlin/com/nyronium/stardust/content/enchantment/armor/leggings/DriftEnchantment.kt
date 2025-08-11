@@ -1,8 +1,8 @@
-package com.nyronium.stardust.content.enchantment.armor
+package com.nyronium.stardust.content.enchantment.armor.leggings
 
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.item.enchantment.EnchantmentCategory

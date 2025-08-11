@@ -1,7 +1,7 @@
 package mixin;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.nyronium.stardust.core.EnchantmentRegistry;
+import com.nyronium.stardust.core.registry.EnchantmentRegistry;
 import com.nyronium.stardust.core.StardustUtils;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;

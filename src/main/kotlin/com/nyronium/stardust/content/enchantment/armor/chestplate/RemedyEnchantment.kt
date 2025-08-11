@@ -1,9 +1,9 @@
-package com.nyronium.stardust.content.enchantment.armor
+package com.nyronium.stardust.content.enchantment.armor.chestplate
 
-import com.nyronium.stardust.core.StardustUtils
-import com.nyronium.stardust.core.infrastructure.EnchantmentConfiguration
-import com.nyronium.stardust.core.infrastructure.ObtainingConfiguration
-import com.nyronium.stardust.core.infrastructure.StardustEnchantment
+import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
+import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
+import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.event.entity.player.PlayerXpEvent
@@ -23,7 +23,7 @@ class RemedyEnchantment : StardustEnchantment(EnchantmentConfiguration()
         if(event.entity.level().isClientSide) return
         val player = event.entity
 
-        if(!StardustUtils.hasEnchantment(this, player.getItemBySlot(EquipmentSlot.CHEST))) return
+        if(!player.getItemBySlot(EquipmentSlot.CHEST).hasEnchantment(this)) return
 
         if(player.foodData.needsFood()) {
             player.foodData.eat(1, event.orb.value/10f)

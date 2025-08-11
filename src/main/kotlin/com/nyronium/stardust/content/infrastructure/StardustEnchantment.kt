@@ -1,10 +1,12 @@
-package com.nyronium.stardust.core.infrastructure
+package com.nyronium.stardust.content.infrastructure
 
-import com.nyronium.stardust.core.StardustUtils
+import com.nyronium.stardust.core.StardustUtils.getLevel
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import com.nyronium.stardust.datagen.StardustGlobalLootModifiersProvider
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation
+import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
@@ -49,6 +51,7 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
     fun registerAttributeModifier(
         attribute: Attribute,
         operation: Operation = Operation.ADDITION,
+        condition: (Player) -> Boolean = { true },
         valueOfLevel: (Int) -> Double
     ): UUID {
         val uuid = UUID.randomUUID()
@@ -59,12 +62,12 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
             val attribute = player.getAttribute(attribute) ?: return@task
 
             for (slot in config.applicableSlots) {
-                if (!StardustUtils.hasEnchantment(enchantment, player.getItemBySlot(slot))) {
+                if (!player.getItemBySlot(slot).hasEnchantment(enchantment) || !condition(player)) {
                     if (attribute.getModifier(uuid) == null) return@task
                     attribute.removeModifier(uuid)
                     return@task
                 }
-                val enchantmentLevel = StardustUtils.getLevel(enchantment, player.getItemBySlot(slot))
+                val enchantmentLevel = player.getItemBySlot(slot).getLevel(enchantment)
                 val hasModifier = attribute.getModifier(uuid) != null
                 val isModifierAmountChanged = attribute.getModifier(uuid)?.amount != valueOfLevel(enchantmentLevel)
 
