@@ -21,13 +21,11 @@ import com.nyronium.stardust.content.enchantment.breakable.TenacityEnchantment
 import com.nyronium.stardust.content.enchantment.elytra.LiftEnchantment
 import com.nyronium.stardust.content.enchantment.elytra.ThrustingEnchantment
 import com.nyronium.stardust.content.enchantment.tool.ReachingEnchantment
-import com.nyronium.stardust.content.enchantment.tool.pickaxe.WisdomEnchantment
+import com.nyronium.stardust.content.enchantment.tool.WisdomEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.RampageEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.axe.KineticEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.axe.StrikingEnchantment
-import com.nyronium.stardust.content.enchantment.weapon.sword.DecayEnchantment
-import com.nyronium.stardust.content.enchantment.weapon.sword.FrenzyEnchantment
-import com.nyronium.stardust.content.enchantment.weapon.sword.GainingEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.*
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
@@ -39,6 +37,8 @@ object EnchantmentRegistry {
     val RAMPAGE: RegistryObject<Enchantment> = REGISTRY.register("rampage") { RampageEnchantment() }
     val FRENZY: RegistryObject<Enchantment> = REGISTRY.register("frenzy") { FrenzyEnchantment() }
     val DECAY: RegistryObject<Enchantment> = REGISTRY.register("decay") { DecayEnchantment() }
+    val VENOM: RegistryObject<Enchantment> = REGISTRY.register("venom") { VenomEnchantment() }
+    val FROSTBITE: RegistryObject<Enchantment> = REGISTRY.register("frostbite") { FrostbiteEnchantment() }
     val GAINING: RegistryObject<Enchantment> = REGISTRY.register("gaining") { GainingEnchantment() }
 
     val WISDOM: RegistryObject<Enchantment> = REGISTRY.register("wisdom") { WisdomEnchantment() }
