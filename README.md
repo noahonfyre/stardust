@@ -15,6 +15,8 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Rampage (V) heals the player after a kill.
 - Frenzy (III) increases the weapon's attack speed.
 - Decay (II) inflicts wither on the enemy on hit.
+- Venom (II) inflicts poison on the enemy on hit.
+- Frostbite (II) inflicts freezing on the enemy on hit.
 - Gaining (V) increases experience yield from entities.
 ### Tool Enchantments
 - Wisdom (V) increases experience yield from blocks.
@@ -27,7 +29,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Resilience (IV) increases armor toughness.
 ### Helmet Enchantments
 - Stealthiness (III) hides the player's nametag.
-- Consumption (V) increases eating and drinking speed.
+- Consumption (III) increases eating and drinking speed.
 - Charisma (III) obtains special prices from villagers.
 - Peering neutralizes enderman and piglin aggression.
 ### Chestplate Enchantments
@@ -40,11 +42,13 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Stability (IV) grants partial knockback resistance.
 ### Boots Enchantments
 - Pacing (III) grants increased movement speed.
+### Elytra Enchantments
+- Lift increases lift while elytra flying.
+- Thrusting (III) boosts the player slightly while elytra flying.
 ### Durability Enchantments
 - Reparation repairs the item over time when mending is also present.
-- Tenacity makes the item truly unbreakable.
+- Tenacity makes the item truly unbreakable and immune to almost every external source of damage.
 ### Other Enchantments
-- Retention prevents the item from falling into the void or being destroyed.
 - Soulbound keeps the item in the inventory after death.
 
 ---

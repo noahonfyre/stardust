@@ -1,7 +1,6 @@
 package com.nyronium.stardust.core.registry
 
 import com.nyronium.stardust.Stardust
-import com.nyronium.stardust.content.enchantment.RetentionEnchantment
 import com.nyronium.stardust.content.enchantment.SoulboundEnchantment
 import com.nyronium.stardust.content.enchantment.armor.ResilienceEnchantment
 import com.nyronium.stardust.content.enchantment.armor.ShelteringEnchantment
@@ -71,6 +70,5 @@ object EnchantmentRegistry {
     val REPARATION: RegistryObject<Enchantment> = REGISTRY.register("reparation") { ReparationEnchantment() }
     val TENACITY: RegistryObject<Enchantment> = REGISTRY.register("tenacity") { TenacityEnchantment() }
 
-    val RETENTION: RegistryObject<Enchantment> = REGISTRY.register("retention") { RetentionEnchantment() }
     val SOULBOUND: RegistryObject<Enchantment> = REGISTRY.register("soulbound") { SoulboundEnchantment() }
 }

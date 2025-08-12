@@ -7,6 +7,10 @@
   "enchantment.stardust.frenzy.desc": "Erhöht die Angriffsgeschwindigkeit.",
   "enchantment.stardust.decay": "Dürre",
   "enchantment.stardust.decay.desc": "Fügt dem Gegner zusätzlichen Wither-Schaden zu.",
+  "enchantment.stardust.venom": "Vergifteter Schlag",
+  "enchantment.stardust.venom.desc": "Fügt dem Gegner zusätzlichen Gift-Schaden zu.",
+  "enchantment.stardust.frostbite": "Hirnfrost",
+  "enchantment.stardust.frostbite.desc": "Lässt den Gegner erfrieren.",
   "enchantment.stardust.gaining": "Ausbeute",
   "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag von Entitäten.",
 
@@ -59,10 +63,8 @@
   "enchantment.stardust.reparation": "Ausbesserung",
   "enchantment.stardust.reparation.desc": "Repariert das Werkzeug über die Zeit, wenn es ebenfalls mit Reparatur verzaubert ist.",
   "enchantment.stardust.tenacity": "Zuverlässigkeit",
-  "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar.",
+  "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar und immun gegen externe Einflüsse.",
 
-  "enchantment.stardust.retention": "Erhaltung",
-  "enchantment.stardust.retention.desc": "Hindert den Gegenstand vor dem Fallen in die Leere und vor Zerstörung.",
   "enchantment.stardust.soulbound": "Gebundenheit",
   "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand nach dem Tod im Inventar."
 }

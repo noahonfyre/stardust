@@ -21,7 +21,7 @@ public class ItemEntityMixin {
     @Inject(method = "hurt", at = @At("HEAD"), cancellable = true)
     private void hurt(DamageSource pSource, float pAmount, CallbackInfoReturnable<Boolean> cir) {
         ItemEntity self = (ItemEntity) (Object) this;
-        if(StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getRETENTION().get(), self.getItem())) {
+        if(StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getTENACITY().get(), self.getItem())) {
             cir.setReturnValue(false);
         }
     }
@@ -32,7 +32,7 @@ public class ItemEntityMixin {
         if (self.getY() < self.level().getMinBuildHeight()-64.0) {
             Level level = self.level();
             ItemStack stack = self.getItem().copy();
-            if (!level.isClientSide && StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getRETENTION().get(), stack)) {
+            if (!level.isClientSide && StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getTENACITY().get(), stack)) {
                 ItemEntityAccessor accessor = (ItemEntityAccessor) this;
                 UUID throwerUUID = accessor.getThrower();
                 if (throwerUUID != null) {
