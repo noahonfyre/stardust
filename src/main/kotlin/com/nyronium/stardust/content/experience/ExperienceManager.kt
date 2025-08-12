@@ -29,9 +29,7 @@ object ExperienceManager {
         if (menu is EnchantmentMenu) {
             val levelsRequired: Int = menu.costs[selectedLocal.get()]
 
-            player.giveExperiencePoints(
-                levelToTotalExperience(levelsRequired)-levelToTotalExperience(levelsRequired + cost)
-            )
+            player.giveExperiencePoints(levelToTotalExperience(levelsRequired + cost)-levelToTotalExperience(levelsRequired))
         }
     }
 }
