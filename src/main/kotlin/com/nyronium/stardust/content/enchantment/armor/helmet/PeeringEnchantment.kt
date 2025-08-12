@@ -10,7 +10,7 @@ import net.minecraftforge.event.entity.living.EnderManAngerEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class PeeringEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).enchantingTable().loot("chests/nether_bridge", 0.25f).loot("chests/stronghold_corridor", 0.33f))
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().loot("chests/nether_bridge", 0.25f).loot("chests/stronghold_corridor", 0.33f))
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
 ) {

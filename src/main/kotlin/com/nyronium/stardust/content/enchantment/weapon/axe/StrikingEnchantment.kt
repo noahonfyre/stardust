@@ -13,7 +13,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class StrikingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).enchantingTable().loot("chests/pillager_outpost", 0.50f))
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default().loot("chests/pillager_outpost", 0.50f))
     .category(StardustCategories.AXE)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

@@ -11,7 +11,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 class PacingEnchantment : StardustEnchantment(
     EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().notDiscoverable())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
     .category(EnchantmentCategory.ARMOR_FEET)
     .applicableSlots(EquipmentSlot.FEET)
 ) {

@@ -11,7 +11,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class RemedyEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).enchantingTable().loot("chests/stronghold_corridor", 0.25f))
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default().loot("chests/stronghold_corridor", 0.25f))
     .category(EnchantmentCategory.ARMOR_CHEST)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {

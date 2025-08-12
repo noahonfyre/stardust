@@ -14,7 +14,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class ConsumptionEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default().notTradable())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
 ) {
