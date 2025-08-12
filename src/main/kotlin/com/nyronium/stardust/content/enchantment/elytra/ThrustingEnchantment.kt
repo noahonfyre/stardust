@@ -1,19 +1,19 @@
 package com.nyronium.stardust.content.enchantment.elytra
 
-import com.nyronium.stardust.core.StardustUtils.getLevel
-import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustCategories
+import com.nyronium.stardust.core.StardustUtils.getLevel
+import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import net.minecraft.world.entity.EquipmentSlot
-import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class ThrustingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
     .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
-    .category(EnchantmentCategory.WEARABLE)
+    .category(StardustCategories.ELYTRA)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {
     init {

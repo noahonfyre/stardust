@@ -3,14 +3,14 @@ package com.nyronium.stardust.content.enchantment.elytra
 import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.content.infrastructure.StardustEnchantment
+import com.nyronium.stardust.core.StardustCategories
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
-import net.minecraft.world.item.enchantment.EnchantmentCategory
 import net.minecraftforge.common.ForgeMod
 
 class LiftEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .obtaining(ObtainingConfiguration(Rarity.RARE).default())
-    .category(EnchantmentCategory.WEARABLE)
+    .category(StardustCategories.ELYTRA)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {
     init {

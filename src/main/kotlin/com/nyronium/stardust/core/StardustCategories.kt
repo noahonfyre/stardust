@@ -17,6 +17,9 @@ object StardustCategories {
     val PICKAXE: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":pickaxe") {
         it is PickaxeItem
     }
+    val ELYTRA: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":elytra") {
+        it is ElytraItem
+    }
     val NONE: EnchantmentCategory = EnchantmentCategory.create(Stardust.ID+":none") {
         false
     }
