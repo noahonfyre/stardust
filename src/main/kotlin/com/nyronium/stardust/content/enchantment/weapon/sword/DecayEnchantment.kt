@@ -19,7 +19,7 @@ class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {
     override fun checkCompatibility(pOther: Enchantment): Boolean {
-        return super.checkCompatibility(pOther) && (pOther is VenomEnchantment || pOther == Enchantments.FIRE_ASPECT )
+        return super.checkCompatibility(pOther) && pOther !is VenomEnchantment && pOther != Enchantments.FIRE_ASPECT
     }
 
     override fun doPostAttack(pAttacker: LivingEntity, pTarget: Entity, pLevel: Int) {
