@@ -3,6 +3,7 @@ package com.nyronium.stardust.content.infrastructure
 import com.nyronium.stardust.core.StardustUtils.getLevel
 import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import com.nyronium.stardust.datagen.StardustGlobalLootModifiersProvider
+import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation
@@ -52,16 +53,21 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
         attribute: Attribute,
         operation: Operation = Operation.ADDITION,
         condition: (Player) -> Boolean = { true },
-        valueOfLevel: (Int) -> Double
-    ): UUID {
-        val uuid = UUID.randomUUID()
+        value: (Int) -> Double
+    ): Map<EquipmentSlot, UUID> {
+        val modifierUUIDs = mutableMapOf<EquipmentSlot, UUID>()
+
+        for(slot in config.applicableSlots) {
+            val uuid = UUID.randomUUID()
+            modifierUUIDs[slot] = uuid
+        }
 
         FORGE_BUS.addListener task@{ event: TickEvent.PlayerTickEvent ->
             val player = event.player
             val enchantment = this
             val attribute = player.getAttribute(attribute) ?: return@task
 
-            for (slot in config.applicableSlots) {
+            for ((slot, uuid) in modifierUUIDs) {
                 if (!player.getItemBySlot(slot).hasEnchantment(enchantment) || !condition(player)) {
                     if (attribute.getModifier(uuid) == null) return@task
                     attribute.removeModifier(uuid)
@@ -69,7 +75,7 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
                 }
                 val enchantmentLevel = player.getItemBySlot(slot).getLevel(enchantment)
                 val hasModifier = attribute.getModifier(uuid) != null
-                val isModifierAmountChanged = attribute.getModifier(uuid)?.amount != valueOfLevel(enchantmentLevel)
+                val isModifierAmountChanged = attribute.getModifier(uuid)?.amount != value(enchantmentLevel)
 
                 if (hasModifier && isModifierAmountChanged) attribute.removeModifier(uuid)
                 if (hasModifier) return@task
@@ -77,14 +83,13 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
                 val modifier = AttributeModifier(
                     uuid,
                     "Enchantment modifier",
-                    valueOfLevel(enchantmentLevel),
+                    value(enchantmentLevel),
                     operation
                 )
 
                 attribute.addTransientModifier(modifier)
             }
         }
-
-        return uuid
+        return modifierUUIDs
     }
 }
