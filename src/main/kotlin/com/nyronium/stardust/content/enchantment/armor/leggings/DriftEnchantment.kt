@@ -17,6 +17,10 @@ class DriftEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .incompatible(Enchantments.SWIFT_SNEAK)
 ) {
     init {
-        registerAttributeModifier(ForgeMod.SWIM_SPEED.get(), AttributeModifier.Operation.MULTIPLY_BASE) { level -> 0.25*level }
+        registerAttributeModifier(
+            attribute = ForgeMod.SWIM_SPEED.get(),
+            operation = AttributeModifier.Operation.MULTIPLY_BASE,
+            condition = { it.isUnderWater && it.isSwimming }
+        ) { level -> 0.25*level }
     }
 }
