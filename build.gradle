@@ -108,10 +108,8 @@ repositories {
         content { includeGroup "thedarkcolour" }
     }
     maven {
-        url "https://cursemaven.com"
-        content {
-            includeGroup "curse.maven"
-        }
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
     }
 }
 
@@ -121,8 +119,12 @@ dependencies {
 
     implementation "thedarkcolour:kotlinforforge:$kff_version"
 
-    implementation fg.deobf("curse.maven:enchantment-descriptions-250419:5855251")
-    implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
+    // Enchantment Descriptions
+    implementation fg.deobf("maven.modrinth:UVtY3ZAC:nq9ce04C")
+    // Bookshelf
+    implementation fg.deobf("maven.modrinth:uy4Cnpcm:tNwsir0K")
+    // Do a Barrel Roll
+    implementation fg.deobf("maven.modrinth:6FtRfnLg:VH8QpKA5")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
