@@ -13,7 +13,6 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 ### Sword Enchantments
 - Rampage (V) heals the player after a kill.
-- Frenzy (III) increases the weapon's attack speed.
 - Decay (II) inflicts wither on the enemy on hit.
 - Venom (II) inflicts poison on the enemy on hit.
 - Frostbite (II) inflicts freezing on the enemy on hit.

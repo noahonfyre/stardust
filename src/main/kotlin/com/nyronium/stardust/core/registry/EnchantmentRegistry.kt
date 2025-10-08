@@ -34,7 +34,6 @@ object EnchantmentRegistry {
     val REGISTRY: DeferredRegister<Enchantment> = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, Stardust.ID)
 
     val RAMPAGE: RegistryObject<Enchantment> = REGISTRY.register("rampage") { RampageEnchantment() }
-    val FRENZY: RegistryObject<Enchantment> = REGISTRY.register("frenzy") { FrenzyEnchantment() }
     val DECAY: RegistryObject<Enchantment> = REGISTRY.register("decay") { DecayEnchantment() }
     val VENOM: RegistryObject<Enchantment> = REGISTRY.register("venom") { VenomEnchantment() }
     val FROSTBITE: RegistryObject<Enchantment> = REGISTRY.register("frostbite") { FrostbiteEnchantment() }
