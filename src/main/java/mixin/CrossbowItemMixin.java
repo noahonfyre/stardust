@@ -20,6 +20,7 @@ import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(CrossbowItem.class)
 public abstract class CrossbowItemMixin {
+    // INFINITY
     @Inject(method = "loadProjectile", at = @At(value = "HEAD"), cancellable = true)
     private static void loadProjectile(LivingEntity pShooter, ItemStack pCrossbowStack, ItemStack pAmmoStack, boolean pHasAmmo, boolean pIsCreative, CallbackInfoReturnable<Boolean> cir) {
         if (pAmmoStack.isEmpty()) {
@@ -62,6 +63,7 @@ public abstract class CrossbowItemMixin {
         compoundtag.put("ChargedProjectiles", listtag);
     }
 
+    // POWER PUNCH FLAME
     @Inject(method = "getArrow", at = @At("RETURN"), locals = LocalCapture.CAPTURE_FAILHARD, cancellable = true)
     private static void getArrow(Level pLevel, LivingEntity pLivingEntity, ItemStack pCrossbowStack, ItemStack pAmmoStack, CallbackInfoReturnable<AbstractArrow> cir, ArrowItem arrowitem, AbstractArrow abstractarrow) {
         int j = StardustUtils.INSTANCE.getLevel(Enchantments.POWER_ARROWS, pCrossbowStack);

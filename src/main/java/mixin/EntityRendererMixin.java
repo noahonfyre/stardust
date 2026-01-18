@@ -17,6 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(EntityRenderer.class)
 public abstract class EntityRendererMixin {
+    // STEALTHINESS
     @Inject(method = "shouldShowName", at = @At("RETURN"), cancellable = true)
     private void shouldShowName(Entity pEntity, CallbackInfoReturnable<Boolean> cir){
         if(pEntity instanceof Player player && StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getSTEALTHINESS().get(), player.getItemBySlot(EquipmentSlot.HEAD))) {
@@ -24,6 +25,7 @@ public abstract class EntityRendererMixin {
         }
     }
 
+    // STEALTHINESS
     @Inject(method = "renderNameTag", at = @At("RETURN"), cancellable = true)
     private void renderNameTag(Entity pEntity, Component pDisplayName, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight, CallbackInfo ci){
         if(pEntity instanceof Player player && StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getSTEALTHINESS().get(), player.getItemBySlot(EquipmentSlot.HEAD))) {

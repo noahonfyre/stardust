@@ -18,6 +18,7 @@ import java.util.UUID;
 
 @Mixin(ItemEntity.class)
 public class ItemEntityMixin {
+    // TENACITY
     @Inject(method = "hurt", at = @At("HEAD"), cancellable = true)
     private void hurt(DamageSource pSource, float pAmount, CallbackInfoReturnable<Boolean> cir) {
         ItemEntity self = (ItemEntity) (Object) this;
@@ -26,6 +27,7 @@ public class ItemEntityMixin {
         }
     }
 
+    // TENACITY
     @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/Entity;tick()V"), cancellable = true)
     private void tick(CallbackInfo ci) {
         ItemEntity self = (ItemEntity) (Object) this;

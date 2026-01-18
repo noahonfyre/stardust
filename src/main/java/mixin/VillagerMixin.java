@@ -13,6 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Villager.class)
 public class VillagerMixin {
+
+    // CHARISMA
     @Inject(method = "updateSpecialPrices", at = @At("HEAD"))
     private void updateSpecialPrices(Player pPlayer, CallbackInfo ci) {
         if(!StardustUtils.INSTANCE.hasEnchantment(EnchantmentRegistry.INSTANCE.getCHARISMA().get(), pPlayer.getItemBySlot(EquipmentSlot.HEAD))) return;
