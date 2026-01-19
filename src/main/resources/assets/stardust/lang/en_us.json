@@ -61,7 +61,7 @@
   "enchantment.stardust.reparation": "Reparation",
   "enchantment.stardust.reparation.desc": "Repairs the item over time when mending is also present.",
   "enchantment.stardust.tenacity": "Tenacity",
-  "enchantment.stardust.tenacity.desc": "Makes the item truly unbreakable and immune to almost every external source of damage.",
+  "enchantment.stardust.tenacity.desc": "Makes the item truly unbreakable and immune to damage like falling into the void or being dropped into a cactus.",
 
   "enchantment.stardust.soulbound": "Soulbound",
   "enchantment.stardust.soulbound.desc": "Keeps the item in the inventory after death."

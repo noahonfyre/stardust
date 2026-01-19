@@ -61,7 +61,7 @@
   "enchantment.stardust.reparation": "Ausbesserung",
   "enchantment.stardust.reparation.desc": "Repariert das Werkzeug über die Zeit, wenn es ebenfalls mit Reparatur verzaubert ist.",
   "enchantment.stardust.tenacity": "Zuverlässigkeit",
-  "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar und immun gegen externe Einflüsse.",
+  "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar und immun externen Schaden wie das Fallen in die Leere oder das Fallen in einen Kaktus.",
 
   "enchantment.stardust.soulbound": "Gebundenheit",
   "enchantment.stardust.soulbound.desc": "Erhält den Gegenstand nach dem Tod im Inventar."
