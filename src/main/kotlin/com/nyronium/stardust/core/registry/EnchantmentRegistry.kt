@@ -24,7 +24,10 @@ import com.nyronium.stardust.content.enchantment.tool.WisdomEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.RampageEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.axe.KineticEnchantment
 import com.nyronium.stardust.content.enchantment.weapon.axe.StrikingEnchantment
-import com.nyronium.stardust.content.enchantment.weapon.sword.*
+import com.nyronium.stardust.content.enchantment.weapon.sword.DecayEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.FrostbiteEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.GainingEnchantment
+import com.nyronium.stardust.content.enchantment.weapon.sword.VenomEnchantment
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries

@@ -1,5 +1,6 @@
 package com.nyronium.stardust.content.infrastructure
 
+import com.nyronium.stardust.core.EnchantmentHelper
 import com.nyronium.stardust.core.StardustUtils.getLevel
 import com.nyronium.stardust.core.StardustUtils.hasEnchantment
 import com.nyronium.stardust.datagen.StardustGlobalLootModifiersProvider
@@ -8,6 +9,7 @@ import net.minecraft.world.entity.ai.attributes.Attribute
 import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation
 import net.minecraft.world.entity.player.Player
+import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
@@ -29,6 +31,14 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
         }
     }
 
+    override fun canApplyAtEnchantingTable(stack: ItemStack): Boolean {
+        return super.canApplyAtEnchantingTable(stack) && EnchantmentHelper.isEnchantmentEnabled(this)
+    }
+
+    override fun isAllowedOnBooks(): Boolean {
+        return super.isAllowedOnBooks() && EnchantmentHelper.isEnchantmentEnabled(this)
+    }
+
     override fun isDiscoverable(): Boolean {
         return config.obtainingConfiguration.isDiscoverable
     }
@@ -46,7 +56,7 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
     }
 
     override fun checkCompatibility(pOther: Enchantment): Boolean {
-        return super.checkCompatibility(pOther) && !config.incompatibleEnchantments.contains(pOther)
+        return super.checkCompatibility(pOther) && !config.incompatibleEnchantments.contains(pOther) && EnchantmentHelper.isEnchantmentEnabled(this)
     }
 
     fun registerAttributeModifier(
