@@ -2,8 +2,8 @@
 
 ---
 
-Stardust currently adds **20+ new vanilla-style enchantments** to the game with even more to come.
-It aims to add variety to the slightly bland collection of enchantments currently in the game whilst still keeping it as close to vanilla as possible.
+Stardust currently adds **20+ new vanilla-style enchantments** to the game, with even more to come.
+It aims to add variety to the slightly bland collection of enchantments currently in the game, whilst still keeping it as close to vanilla as possible.
 
 ---
 
@@ -27,7 +27,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Sheltering (IV) increases armor points.
 - Resilience (IV) increases armor toughness.
 ### Helmet Enchantments
-- Stealthiness (III) hides the player's nametag.
+- Stealthiness (III) hides the player's name tag.
 - Consumption (III) increases eating and drinking speed.
 - Charisma (III) obtains special prices from villagers.
 - Peering neutralizes enderman and piglin aggression.
@@ -70,6 +70,7 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 
 - Use [Enchantment Descriptions](https://modrinth.com/mod/enchantment-descriptions) for additional in-game descriptions for each enchantment.
 - All enchantments should be compatible with [Create: Enchantment Industry](https://modrinth.com/mod/create-enchantment-industry)'s overenchanting mechanic.
+- Overlapping or unwanted enchantments can be disabled via the [config file](https://github.com/noahonfyre/stardust/blob/1.20.1-forge/CONFIG.md).
 
 ---
 
@@ -81,4 +82,4 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 Not at the moment, Sorry.
 
 ### Q: Can I use this in my Modpack?
-[Sure](https://support.modrinth.com/en/articles/8797527-obtaining-modpack-permissions), as long as it's only hosted on Modrinth!
+Sure, as long as it's only hosted on Modrinth or CurseForge!
