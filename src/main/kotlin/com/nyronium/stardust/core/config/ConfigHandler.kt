@@ -9,7 +9,7 @@ object ConfigHandler {
 
     var disabledEnchantments: ForgeConfigSpec.ConfigValue<MutableList<out String>> = BUILDER
         .comment(
-            " A list of disabled enchantments by their enchantment ID ()"
+            " A list of disabled enchantments by their enchantment ID (e.g. stardust:tenacity)"
         )
         .defineList(
             "disabled_enchantments",
