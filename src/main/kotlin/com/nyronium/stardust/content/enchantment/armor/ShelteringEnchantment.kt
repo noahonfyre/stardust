@@ -14,6 +14,6 @@ class ShelteringEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .applicableSlots(EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET)
 ) {
     init {
-        registerAttributeModifier(Attributes.ARMOR) { level -> 2.0 * level }
+        registerAttributeModifier(Attributes.ARMOR) { level -> 0.5 * level }
     }
 }
