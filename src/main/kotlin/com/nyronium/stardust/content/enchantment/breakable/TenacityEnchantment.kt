@@ -13,7 +13,7 @@ import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class TenacityEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).loot("chests/ancient_city", 0.25f).tradable())
     .category(EnchantmentCategory.BREAKABLE)
     .applicableSlotsAll(EquipmentSlot.entries.toTypedArray())
 ) {
