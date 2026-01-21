@@ -79,16 +79,16 @@ open class StardustEnchantment(val config: EnchantmentConfiguration) : Enchantme
 
             for ((slot, uuid) in modifierUUIDs) {
                 if (!player.getItemBySlot(slot).hasEnchantment(enchantment) || !condition(player)) {
-                    if (attribute.getModifier(uuid) == null) return@task
+                    if (attribute.getModifier(uuid) == null) continue
                     attribute.removeModifier(uuid)
-                    return@task
+                    continue
                 }
                 val enchantmentLevel = player.getItemBySlot(slot).getLevel(enchantment)
                 val hasModifier = attribute.getModifier(uuid) != null
                 val isModifierAmountChanged = attribute.getModifier(uuid)?.amount != value(enchantmentLevel)
 
                 if (hasModifier && isModifierAmountChanged) attribute.removeModifier(uuid)
-                if (hasModifier) return@task
+                if (hasModifier) continue
 
                 val modifier = AttributeModifier(
                     uuid,
