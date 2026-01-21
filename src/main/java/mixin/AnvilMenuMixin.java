@@ -11,12 +11,12 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(AnvilMenu.class)
 public class AnvilMenuMixin {
-    @ModifyConstant(method = "createResult", constant = @Constant(intValue = 40))
+    @ModifyConstant(method = "createResult", constant = @Constant(intValue = 40), require = 0)
     private int removeLimit(int original) {
         return Integer.MAX_VALUE;
     }
 
-    @ModifyConstant(method = "createResult", constant = @Constant(intValue = 39))
+    @ModifyConstant(method = "createResult", constant = @Constant(intValue = 39), require = 0)
     private int maxLimit(int original) {
         return Integer.MAX_VALUE - 1;
     }
