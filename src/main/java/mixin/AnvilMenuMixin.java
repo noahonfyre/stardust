@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(AnvilMenu.class)
+@Mixin(value = AnvilMenu.class, priority = 1)
 public class AnvilMenuMixin {
     @ModifyConstant(method = "createResult", constant = @Constant(intValue = 40), require = 0)
     private int removeLimit(int original) {

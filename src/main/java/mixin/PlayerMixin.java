@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 import java.util.List;
 
-@Mixin(Player.class)
+@Mixin(value = Player.class, priority = 2000)
 public abstract class PlayerMixin {
 
     // SOULBOUND

@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(EnchantmentMenu.class)
+@Mixin(value = EnchantmentMenu.class, priority = 2000)
 public class EnchantmentMenuMixin {
     @Inject(method = "clickMenuButton", at = @At("HEAD"))
     private void clickMenuButton(Player pPlayer, int pId, CallbackInfoReturnable<Boolean> cir) {

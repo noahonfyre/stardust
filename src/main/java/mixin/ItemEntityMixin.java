@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Objects;
 import java.util.UUID;
 
-@Mixin(ItemEntity.class)
+@Mixin(value = ItemEntity.class, priority = 2000)
 public class ItemEntityMixin {
     // TENACITY
     @Inject(method = "hurt", at = @At("HEAD"), cancellable = true)
@@ -28,7 +28,7 @@ public class ItemEntityMixin {
     }
 
     // TENACITY
-    @Inject(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/Entity;tick()V"), cancellable = true)
+    @Inject(method = "tick", at = @At(value = "HEAD"), cancellable = true)
     private void tick(CallbackInfo ci) {
         ItemEntity self = (ItemEntity) (Object) this;
         if (self.getY() < self.level().getMinBuildHeight()-64.0) {
