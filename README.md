@@ -27,10 +27,9 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Sheltering (IV) increases armor points.
 - Resilience (IV) increases armor toughness.
 ### Helmet Enchantments
-- Stealthiness (III) hides the player's name tag.
+- Stealthiness hides the nametag of the wearer and makes them invisible for endermen and piglins.
 - Consumption (III) increases eating and drinking speed.
 - Charisma (III) obtains special prices from villagers.
-- Peering neutralizes enderman and piglin aggression.
 ### Chestplate Enchantments
 - Remedy restores player stats like hunger and health from incoming experience.
 - Nullification (V) grants nullification of any incoming damage to a small chance.
@@ -38,14 +37,12 @@ It aims to add variety to the slightly bland collection of enchantments currentl
 - Endurance (IV) reduces hunger exhaustion.
 - Drift (IV) increases swimming speed.
 - Determination (IV) heals the player faster whilst sneaking.
-- Stability (IV) grants partial knockback resistance.
 ### Boots Enchantments
 - Pacing (III) grants increased movement speed.
 ### Elytra Enchantments
 - Lift increases lift while elytra flying.
 - Thrusting (III) boosts the player slightly while elytra flying.
 ### Durability Enchantments
-- Reparation repairs the item over time when mending is also present.
 - Tenacity makes the item truly unbreakable and immune to almost every external source of damage.
 ### Other Enchantments
 - Soulbound keeps the item in the inventory after death.
