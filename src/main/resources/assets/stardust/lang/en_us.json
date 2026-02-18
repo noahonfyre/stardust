@@ -28,13 +28,11 @@
   "enchantment.stardust.resilience.desc": "Increases armor toughness.",
 
   "enchantment.stardust.stealthiness": "Stealthiness",
-  "enchantment.stardust.stealthiness.desc": "Hides the player's nametag.",
+  "enchantment.stardust.stealthiness.desc": "Hides the nametag of the wearer and makes them invisible for endermen and piglins.",
   "enchantment.stardust.consumption": "Consumption",
   "enchantment.stardust.consumption.desc": "Increases eating and drinking speed.",
   "enchantment.stardust.charisma": "Charisma",
   "enchantment.stardust.charisma.desc": "Obtains special prices from villagers.",
-  "enchantment.stardust.peering": "Peering",
-  "enchantment.stardust.peering.desc": "Removes enderman and piglin aggression.",
 
   "enchantment.stardust.remedy": "Remedy",
   "enchantment.stardust.remedy.desc": "Restores player stats like hunger and health from incoming experience.",
@@ -47,8 +45,6 @@
   "enchantment.stardust.drift.desc": "Increases swimming speed.",
   "enchantment.stardust.determination": "Determination",
   "enchantment.stardust.determination.desc": "Heals the player faster whilst sneaking.",
-  "enchantment.stardust.stability": "Stability",
-  "enchantment.stardust.stability.desc": "Grants partial knockback resistance.",
 
   "enchantment.stardust.pacing": "Pacing",
   "enchantment.stardust.pacing.desc": "Grants increased movement speed.",
@@ -58,8 +54,6 @@
   "enchantment.stardust.thrusting": "Thrusting",
   "enchantment.stardust.thrusting.desc": "Boosts the player slightly while elytra flying.",
 
-  "enchantment.stardust.reparation": "Reparation",
-  "enchantment.stardust.reparation.desc": "Repairs the item over time when mending is also present.",
   "enchantment.stardust.tenacity": "Tenacity",
   "enchantment.stardust.tenacity.desc": "Makes the item truly unbreakable and immune to damage like falling into the void or being dropped into a cactus.",
 

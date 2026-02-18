@@ -1,13 +1,13 @@
 {
   "tooltip.stardust.extend": "Drücke UMSCHALT",
 
-  "enchantment.stardust.rampage": "Randale",
+  "enchantment.stardust.rampage": "Wutanfall",
   "enchantment.stardust.rampage.desc": "Heilt den Spieler nach einem Kill.",
   "enchantment.stardust.decay": "Dürre",
   "enchantment.stardust.decay.desc": "Fügt dem Gegner zusätzlichen Wither-Schaden zu.",
-  "enchantment.stardust.venom": "Vergifteter Schlag",
+  "enchantment.stardust.venom": "Vergiftetet",
   "enchantment.stardust.venom.desc": "Fügt dem Gegner zusätzlichen Gift-Schaden zu.",
-  "enchantment.stardust.frostbite": "Hirnfrost",
+  "enchantment.stardust.frostbite": "Vereisend",
   "enchantment.stardust.frostbite.desc": "Lässt den Gegner erfrieren.",
   "enchantment.stardust.gaining": "Ausbeute",
   "enchantment.stardust.gaining.desc": "Erhöht den Erfahrungsertrag von Entitäten.",
@@ -28,14 +28,11 @@
   "enchantment.stardust.resilience.desc": "Erhöht die Rüstungshärte der Rüstung.",
 
   "enchantment.stardust.stealthiness": "Schleier",
-  "enchantment.stardust.stealthiness.desc": "Versteckt das Namensschild des Spielers.",
+  "enchantment.stardust.stealthiness.desc": "Versteckt das Namensschild des Trägers und macht ihn unsichtbar für Endermen und Piglins.",
   "enchantment.stardust.consumption": "Verschlingen",
   "enchantment.stardust.consumption.desc": "Erhöht die Essens- und Trinkgeschwindigkeit.",
   "enchantment.stardust.charisma": "Charisma",
   "enchantment.stardust.charisma.desc": "Lässt die Preise der Dorfbewohner sinken.",
-  "enchantment.stardust.peering": "Spähen",
-  "enchantment.stardust.peering.desc": "Beschwichtigt Endermen und Piglin.",
-
   "enchantment.stardust.remedy": "Aufstockung",
   "enchantment.stardust.remedy.desc": "Stellt Gesundheit und Hunger durch eingehende Erfahrung wieder her.",
   "enchantment.stardust.nullification": "Annullierung",
@@ -47,9 +44,6 @@
   "enchantment.stardust.drift.desc": "Erhöht die Schwimmgeschwindigkeit.",
   "enchantment.stardust.determination": "Entschlossenheit",
   "enchantment.stardust.determination.desc": "Heilt den Spieler schneller, während er schleicht.",
-  "enchantment.stardust.stability": "Beständigkeit",
-  "enchantment.stardust.stability.desc": "Gewährt Rückstoßwiderstand.",
-
   "enchantment.stardust.pacing": "Schneller Schritt",
   "enchantment.stardust.pacing.desc": "Gewährt schnellere Schrittgeschwindigkeit.",
 
@@ -58,8 +52,6 @@
   "enchantment.stardust.thrusting": "Schub",
   "enchantment.stardust.thrusting.desc": "Treibt den Spieler während des Fliegens leicht an.",
 
-  "enchantment.stardust.reparation": "Ausbesserung",
-  "enchantment.stardust.reparation.desc": "Repariert das Werkzeug über die Zeit, wenn es ebenfalls mit Reparatur verzaubert ist.",
   "enchantment.stardust.tenacity": "Zuverlässigkeit",
   "enchantment.stardust.tenacity.desc": "Macht den Gegenstand unzerstörbar und immun externen Schaden wie das Fallen in die Leere oder das Fallen in einen Kaktus.",
 
