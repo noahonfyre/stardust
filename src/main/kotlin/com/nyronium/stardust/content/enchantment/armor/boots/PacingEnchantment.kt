@@ -8,10 +8,9 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraft.world.entity.ai.attributes.Attributes
 import net.minecraft.world.item.enchantment.EnchantmentCategory
 
-class PacingEnchantment : StardustEnchantment(
-    EnchantmentConfiguration()
+class PacingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).tradable())
     .category(EnchantmentCategory.ARMOR_FEET)
     .applicableSlots(EquipmentSlot.FEET)
 ) {

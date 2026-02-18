@@ -13,7 +13,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 class WisdomEnchantment : StardustEnchantment(
     EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).tradable())
     .category(EnchantmentCategory.DIGGER)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

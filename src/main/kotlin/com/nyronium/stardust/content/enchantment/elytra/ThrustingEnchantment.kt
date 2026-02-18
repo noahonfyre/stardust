@@ -12,7 +12,7 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class ThrustingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).tradable())
     .category(StardustCategories.ELYTRA)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {

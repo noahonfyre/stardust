@@ -9,7 +9,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier
 import net.minecraftforge.common.ForgeMod
 
 class LiftEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.RARE)
+        .loot("chests/end_city_treasure", 1/3f)
+        .treasure()
+        .tradable()
+    )
     .category(StardustCategories.ELYTRA)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {

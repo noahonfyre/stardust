@@ -13,7 +13,10 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class NullificationEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default().loot("chests/desert_pyramid", 0.25f))
+    .obtaining(ObtainingConfiguration(Rarity.RARE)
+        .loot("chests/desert_pyramid", 0.25f)
+        .tradable()
+    )
     .category(EnchantmentCategory.ARMOR_CHEST)
     .applicableSlots(EquipmentSlot.CHEST)
 ) {

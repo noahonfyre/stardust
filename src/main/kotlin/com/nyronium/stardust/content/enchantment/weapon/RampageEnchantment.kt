@@ -13,7 +13,10 @@ import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class RampageEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default().loot("chests/woodland_mansion", 0.25f))
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON)
+        .loot("chests/woodland_mansion", 0.25f)
+        .tradable()
+    )
     .category(StardustCategories.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

@@ -8,7 +8,10 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class CharismaEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().loot("chests/pillager_outpost", 0.66f))
+    .obtaining(ObtainingConfiguration(Rarity.COMMON)
+        .loot("chests/pillager_outpost", 0.66f)
+        .tradable()
+    )
     .category(EnchantmentCategory.ARMOR_HEAD)
     .applicableSlots(EquipmentSlot.HEAD)
 )

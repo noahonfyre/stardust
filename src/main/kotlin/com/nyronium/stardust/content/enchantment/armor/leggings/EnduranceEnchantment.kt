@@ -8,7 +8,10 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class EnduranceEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default().loot("chests/village/village_cartographer", 0.75f))
+    .obtaining(ObtainingConfiguration(Rarity.COMMON)
+        .loot("chests/village/village_cartographer", 0.75f)
+        .tradable()
+    )
     .category(EnchantmentCategory.ARMOR_LEGS)
     .applicableSlots(EquipmentSlot.LEGS)
 )

@@ -9,7 +9,7 @@ import net.minecraftforge.common.ForgeMod
 
 class ReachingEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(3)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).tradable())
     .category(StardustCategories.TOOL)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

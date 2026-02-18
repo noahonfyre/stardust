@@ -14,7 +14,7 @@ import net.minecraft.world.item.enchantment.Enchantments
 
 class VenomEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).tradable())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

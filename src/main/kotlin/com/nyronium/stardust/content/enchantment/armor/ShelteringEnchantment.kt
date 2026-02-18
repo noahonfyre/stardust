@@ -9,7 +9,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class ShelteringEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(4)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).tradable())
     .category(EnchantmentCategory.ARMOR)
     .applicableSlots(EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET)
 ) {

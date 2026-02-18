@@ -13,7 +13,10 @@ import kotlin.math.roundToInt
 
 class KineticEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(5)
-    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON).default().loot("chests/end_city_treasure", 0.25f))
+    .obtaining(ObtainingConfiguration(Rarity.UNCOMMON)
+        .loot("chests/end_city_treasure", 0.25f)
+        .tradable()
+    )
     .category(StardustCategories.AXE)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

@@ -4,7 +4,6 @@ import com.nyronium.stardust.content.infrastructure.EnchantmentConfiguration
 import com.nyronium.stardust.content.infrastructure.ObtainingConfiguration
 import com.nyronium.stardust.content.infrastructure.StardustEnchantment
 import com.nyronium.stardust.core.StardustUtils.hasEnchantment
-import com.nyronium.stardust.core.registry.EnchantmentRegistry
 import net.minecraft.world.entity.EquipmentSlot
 import net.minecraft.world.item.enchantment.Enchantment
 import net.minecraft.world.item.enchantment.EnchantmentCategory
@@ -13,12 +12,16 @@ import net.minecraftforge.event.TickEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class TenacityEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).loot("chests/ancient_city", 0.25f).tradable())
+    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE)
+        .loot("chests/ancient_city", 0.25f)
+        .treasure()
+        .tradable()
+    )
     .category(EnchantmentCategory.BREAKABLE)
     .applicableSlotsAll(EquipmentSlot.entries.toTypedArray())
 ) {
     override fun checkCompatibility(pOther: Enchantment): Boolean {
-        return super.checkCompatibility(pOther) && !listOf(Enchantments.MENDING, Enchantments.UNBREAKING, EnchantmentRegistry.REPARATION.get()).contains(pOther)
+        return super.checkCompatibility(pOther) && !listOf(Enchantments.MENDING, Enchantments.UNBREAKING).contains(pOther)
     }
 
     init {

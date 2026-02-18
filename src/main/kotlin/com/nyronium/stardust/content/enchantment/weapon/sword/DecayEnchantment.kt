@@ -14,7 +14,7 @@ import net.minecraft.world.item.enchantment.Enchantments
 
 class DecayEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
-    .obtaining(ObtainingConfiguration(Rarity.RARE).default())
+    .obtaining(ObtainingConfiguration(Rarity.RARE).tradable())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

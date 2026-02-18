@@ -10,7 +10,12 @@ import net.minecraftforge.event.entity.player.PlayerEvent
 import thedarkcolour.kotlinforforge.forge.FORGE_BUS
 
 class SoulboundEnchantment : StardustEnchantment(EnchantmentConfiguration()
-    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE).loot("chests/end_city_treasure", 1/3f).loot("chests/stronghold_corridor", 0.15f).tradable())
+    .obtaining(ObtainingConfiguration(Rarity.VERY_RARE)
+        .loot("chests/end_city_treasure", 1/3f)
+        .loot("chests/stronghold_corridor", 0.15f)
+        .treasure()
+        .tradable()
+    )
     .category(StardustCategories.PRIMARY_ITEMS)
     .applicableSlotsAll(EquipmentSlot.entries.toTypedArray())
 ) {

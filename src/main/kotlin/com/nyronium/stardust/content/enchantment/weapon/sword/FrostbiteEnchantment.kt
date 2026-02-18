@@ -11,7 +11,7 @@ import net.minecraft.world.item.enchantment.EnchantmentCategory
 
 class FrostbiteEnchantment : StardustEnchantment(EnchantmentConfiguration()
     .maxLevel(2)
-    .obtaining(ObtainingConfiguration(Rarity.COMMON).default())
+    .obtaining(ObtainingConfiguration(Rarity.COMMON).tradable())
     .category(EnchantmentCategory.WEAPON)
     .applicableSlots(EquipmentSlot.MAINHAND)
 ) {

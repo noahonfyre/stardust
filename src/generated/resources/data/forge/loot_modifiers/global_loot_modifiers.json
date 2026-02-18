@@ -1,14 +1,17 @@
 {
   "entries": [
-    "stardust:drift_from_underwater_ruin_big",
-    "stardust:rampage_from_woodland_mansion",
     "stardust:nullification_from_desert_pyramid",
-    "stardust:endurance_from_village_cartographer",
+    "stardust:tenacity_from_ancient_city",
     "stardust:peering_from_stronghold_corridor",
     "stardust:remedy_from_stronghold_corridor",
-    "stardust:drift_from_shipwreck_treasure",
     "stardust:kinetic_from_end_city_treasure",
     "stardust:charisma_from_pillager_outpost",
+    "stardust:drift_from_underwater_ruin_big",
+    "stardust:soulbound_from_end_city_treasure",
+    "stardust:rampage_from_woodland_mansion",
+    "stardust:endurance_from_village_cartographer",
+    "stardust:soulbound_from_stronghold_corridor",
+    "stardust:drift_from_shipwreck_treasure",
     "stardust:determination_from_end_city_treasure",
     "stardust:striking_from_pillager_outpost",
     "stardust:peering_from_nether_bridge"

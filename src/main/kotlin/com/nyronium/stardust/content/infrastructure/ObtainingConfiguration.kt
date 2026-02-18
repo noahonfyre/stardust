@@ -10,16 +10,9 @@ import net.minecraftforge.common.loot.LootTableIdCondition
 
 class ObtainingConfiguration(val rarity: Rarity) {
     var lootModifiers: MutableMap<String, (Enchantment) -> EnchantedBookLootModifier> = mutableMapOf()
-    var isTradable: Boolean = false
-    var isDiscoverable: Boolean = false
+    var isTradable: Boolean = true
+    var isDiscoverable: Boolean = true
     var isEnchantableViaEnchantingTable: Boolean = true
-
-    fun default(): ObtainingConfiguration {
-        isTradable = true
-        isDiscoverable = true
-        isEnchantableViaEnchantingTable = true
-        return this
-    }
 
     fun loot(lootTable: String, chance: Float, minLevel: Int? = null, maxLevel: Int? = null): ObtainingConfiguration {
         lootModifiers[lootTable] = {
@@ -39,28 +32,9 @@ class ObtainingConfiguration(val rarity: Rarity) {
         return this
     }
 
-    fun discoverable(): ObtainingConfiguration {
-        isDiscoverable = true
-        return this
-    }
-
-    fun enchantingTable(): ObtainingConfiguration {
-        isEnchantableViaEnchantingTable = true
-        return this
-    }
-
-    fun notTradable(): ObtainingConfiguration {
-        isTradable = false
-        return this
-    }
-
-    fun notDiscoverable(): ObtainingConfiguration {
-        isDiscoverable = false
-        return this
-    }
-
-    fun noEnchantingTable(): ObtainingConfiguration {
+    fun treasure(): ObtainingConfiguration {
         isEnchantableViaEnchantingTable = false
+        isDiscoverable = false
         return this
     }
 }

@@ -10,7 +10,7 @@ class EnchantmentConfiguration {
     var maxLevel: Int = 1
     var category: EnchantmentCategory = StardustCategories.NONE
     var applicableSlots: Array<EquipmentSlot> = arrayOf()
-    var obtainingConfiguration: ObtainingConfiguration = ObtainingConfiguration(Rarity.COMMON).default()
+    var obtainingConfiguration: ObtainingConfiguration = ObtainingConfiguration(Rarity.COMMON)
     var incompatibleEnchantments: MutableList<Enchantment> = mutableListOf()
 
     fun maxLevel(maxLevel: Int): EnchantmentConfiguration {
