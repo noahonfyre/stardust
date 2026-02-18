@@ -9,13 +9,10 @@ import com.nyronium.stardust.content.enchantment.armor.chestplate.NullificationE
 import com.nyronium.stardust.content.enchantment.armor.chestplate.RemedyEnchantment
 import com.nyronium.stardust.content.enchantment.armor.helmet.CharismaEnchantment
 import com.nyronium.stardust.content.enchantment.armor.helmet.ConsumptionEnchantment
-import com.nyronium.stardust.content.enchantment.armor.helmet.PeeringEnchantment
 import com.nyronium.stardust.content.enchantment.armor.helmet.StealthinessEnchantment
 import com.nyronium.stardust.content.enchantment.armor.leggings.DeterminationEnchantment
 import com.nyronium.stardust.content.enchantment.armor.leggings.DriftEnchantment
 import com.nyronium.stardust.content.enchantment.armor.leggings.EnduranceEnchantment
-import com.nyronium.stardust.content.enchantment.armor.leggings.StabilityEnchantment
-import com.nyronium.stardust.content.enchantment.breakable.ReparationEnchantment
 import com.nyronium.stardust.content.enchantment.breakable.TenacityEnchantment
 import com.nyronium.stardust.content.enchantment.elytra.LiftEnchantment
 import com.nyronium.stardust.content.enchantment.elytra.ThrustingEnchantment
@@ -54,7 +51,6 @@ object EnchantmentRegistry {
     val STEALTHINESS: RegistryObject<Enchantment> = REGISTRY.register("stealthiness") { StealthinessEnchantment() }
     val CONSUMPTION: RegistryObject<Enchantment> = REGISTRY.register("consumption") { ConsumptionEnchantment() }
     val CHARISMA: RegistryObject<Enchantment> = REGISTRY.register("charisma") { CharismaEnchantment() }
-    val PEERING: RegistryObject<Enchantment> = REGISTRY.register("peering") { PeeringEnchantment() }
 
     val REMEDY: RegistryObject<Enchantment> = REGISTRY.register("remedy") { RemedyEnchantment() }
     val NULLIFICATION: RegistryObject<Enchantment> = REGISTRY.register("nullification") { NullificationEnchantment() }
@@ -62,14 +58,12 @@ object EnchantmentRegistry {
     val ENDURANCE: RegistryObject<Enchantment> = REGISTRY.register("endurance") { EnduranceEnchantment() }
     val DRIFT: RegistryObject<Enchantment> = REGISTRY.register("drift") { DriftEnchantment() }
     val DETERMINATION: RegistryObject<Enchantment> = REGISTRY.register("determination") { DeterminationEnchantment() }
-    val STABILITY: RegistryObject<Enchantment> = REGISTRY.register("stability") { StabilityEnchantment() }
 
     val PACING: RegistryObject<Enchantment> = REGISTRY.register("pacing") { PacingEnchantment() }
 
     val LIFT: RegistryObject<Enchantment> = REGISTRY.register("lift") { LiftEnchantment() }
     val THRUSTING: RegistryObject<Enchantment> = REGISTRY.register("thrusting") { ThrustingEnchantment() }
 
-    val REPARATION: RegistryObject<Enchantment> = REGISTRY.register("reparation") { ReparationEnchantment() }
     val TENACITY: RegistryObject<Enchantment> = REGISTRY.register("tenacity") { TenacityEnchantment() }
 
     val SOULBOUND: RegistryObject<Enchantment> = REGISTRY.register("soulbound") { SoulboundEnchantment() }
