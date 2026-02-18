@@ -16,7 +16,7 @@ public class PiglinAiMixin {
     private static void isWearingGold(LivingEntity pLivingEntity, CallbackInfoReturnable<Boolean> cir) {
         cir.setReturnValue(cir.getReturnValue() ||
                 StardustUtils.INSTANCE.hasEnchantment(
-                        EnchantmentRegistry.INSTANCE.getPEERING().get(),
+                        EnchantmentRegistry.INSTANCE.getSTEALTHINESS().get(),
                         pLivingEntity.getItemBySlot(EquipmentSlot.HEAD)
                 )
         );
