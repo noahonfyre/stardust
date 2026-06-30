@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "stardust",
+	"version": "${version}",
+	"name": "Stardust",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/stardust/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.starwindstudios.stardust.Stardust",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "com.starwindstudios.stardust.client.StardustClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"stardust.mixins.json",
+		{
+			"config": "stardust.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
